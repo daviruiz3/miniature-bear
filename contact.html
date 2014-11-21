@@ -51,6 +51,14 @@
 
     <div class="container theme-showcase" role="main">
       <div class="jumbotron main-msg">
+        <form name="contactform" method="post" action="send_form_email.php">             
+          <input  type="text" name="first_name" maxlength="50" size="30">             
+          <input  type="text" name="last_name" maxlength="50" size="30">             
+          <input  type="text" name="email" maxlength="80" size="30">             
+          <input  type="text" name="telephone" maxlength="30" size="30">             
+          <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+          <input type="submit" value="Submit">
+        </form>
       </div>
 
     </div> <!-- /container -->
