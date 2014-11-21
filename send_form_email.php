@@ -1,5 +1,4 @@
 <?php
- 
   if(isset($_POST['email'])) {
       // EDIT THE 2 LINES BELOW AS REQUIRED
       $email_to = "daviruiz@outlook.com";
@@ -66,7 +65,7 @@
       // create email headers
       $headers = 'From: '.$email_from."\r\n".'Reply-To: '.$email_from."\r\n" . 'X-Mailer: PHP/' . phpversion();
       
-      @mail($email_to, $email_subject, $email_message, $headers); 
+      mail($email_to, $email_subject, $email_message, $headers); 
     ?>
    
     <!-- include your own success html here -->
@@ -74,5 +73,5 @@
 
   <?php
   }
-  
+
 ?>
