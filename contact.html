@@ -48,6 +48,13 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+    
+    <script language="JavaScript">
+      var frmvalidator  = new Validator("contactform");
+      frmvalidator.addValidation("name","req","Please provide your name");
+      frmvalidator.addValidation("email","req","Please provide your email");
+      frmvalidator.addValidation("email","email","Please enter a valid email address");
+    </script>
 
     <div class="container theme-showcase" role="main">
       <div class="jumbotron main-msg">
@@ -76,12 +83,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <!--include jQuery Validation Plugin-->
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js" type="text/javascript"></script>
-
-    <script language="JavaScript">
-      var frmvalidator  = new Validator("contactform");
-      frmvalidator.addValidation("name","req","Please provide your name");
-      frmvalidator.addValidation("email","req","Please provide your email");
-      frmvalidator.addValidation("email","email","Please enter a valid email address");
-    </script>
   </body>
 </html>
