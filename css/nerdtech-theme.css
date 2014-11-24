@@ -21,7 +21,7 @@
 }
 
 body{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Lato', 'Open Sans', sans-serif;
 	background-color: #5DCD00;
 	color: #CD003E;
 }
@@ -39,4 +39,9 @@ body{
 	background-color: #8651CD;
 	color: #FFEC28;
 	text-align: center;
+}
+
+.event1 img{
+	max-width: 50%;
+	max-height: 50%;
 }
