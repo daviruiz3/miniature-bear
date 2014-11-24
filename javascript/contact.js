@@ -10,7 +10,7 @@ function pageLoad() {
 	$('.followSelector').socialProfiles({
 		animation: 'launchpadReverse',
 		blur: true,
-		//facebook: 'davinruizromero',
+		facebook: 'david.n.ruiz.romero',
 		google: '107830164945272143276',
 		twitter: 'daviruizt',
 		linkedin: 'www.linkedin.com/pub/david-ruiz/61/355/6b5'
