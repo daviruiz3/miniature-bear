@@ -46,6 +46,6 @@ body{
 }
 
 .activities img{
-	max-width: 280px;
-	max-height: 280px;
+	max-width: 280;
+	max-height: 280;
 }
