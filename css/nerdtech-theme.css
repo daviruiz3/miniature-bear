@@ -53,3 +53,7 @@ body{
 body a {
 	color: #FFF056;
 }
+
+body a:hover{
+	color: #8651CD;
+}
