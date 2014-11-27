@@ -54,6 +54,6 @@ body a {
 	color: #FFF056;
 }
 
-body a:hover{
+body a:hover, body a:focus{
 	color: #98EE50;
 }
