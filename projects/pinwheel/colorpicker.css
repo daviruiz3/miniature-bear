@@ -1,0 +1,34 @@
+#red .ui-slider-range,#red .ui-slider-handle{
+	background: red;
+}
+#green .ui-slider-range,#green .ui-slider-handle{
+	background: green;
+}
+#blue .ui-slider-range,#blue .ui-slider-handle{
+	background: blue;
+}
+#swatch{
+	width: 180px;
+	height: 180px;
+	background-image:none;
+	float:right;
+	margin:6px 20px 0px 0px;
+	border:none;
+	background-color:black;
+}
+#sliders{
+	width:500px;
+}
+#colorpicker{
+	float:left;
+	margin:0px 0px 0px 20px;
+}
+#red,#green,#blue{
+	margin:10px 0px 0px 0px;
+}
+#innerswatch{
+	font:bold 24px arial;
+	margin:75px 0px 0px 0px;
+	text-align:center;
+	color:white;
+}

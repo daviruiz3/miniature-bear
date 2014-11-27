@@ -1,0 +1,5 @@
+{
+   "12345": { "itemid": 12345, "description": "Supplies!™ Gold-plated spatula", "price": 150.00  },
+   "42":    { "itemid": 42,    "description": "Towel",                          "price": 1.49    },
+   "90210": { "itemid": 90210, "description": "Bling necklace",                 "price": 3000.00 }
+}

@@ -1,0 +1,17 @@
+/*************
+***David R.***
+***Info 343B**
+*Oct 19, 2012*
+*minilab7.css**
+**************
+*************/
+body{
+	/*background-color: blue;*/
+}
+#catchme{
+	-webkit-transition: all 5s linear;
+	-moz-transition: all 5s linear;
+	-o-transition: all 5s linear;
+	-ms-transition: all 5s linear;
+	transition: all 5s linear;
+}

@@ -1,0 +1,23 @@
+David Ruiz
+INFO 343 B
+Oct. 6, 2012
+----------
+II) Positioning Practice
+
+1) B is floating on top in place and the item below moves up behind it.
+
+
+2) B goes to the bottom right. I think the body is the bounding parent.
+
+
+3) A stays in place but b moves to its bottom right corner, making the ul the bounding parent.
+
+
+4) At 0px nothing changes.
+   At 50px the box moves up and over part of the list is concealed outside of the page.
+
+
+6) Now the list moved to the bottom left of the page. none of it is concealed.
+
+III) Layout Practice
+That was fun!

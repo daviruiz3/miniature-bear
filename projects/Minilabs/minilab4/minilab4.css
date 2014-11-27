@@ -1,0 +1,17 @@
+/*************
+**David Ruiz**
+**Info 343B***
+**Oct 9, 2012*
+*minilab4 css*
+**************
+*************/
+input[type="text"]{
+	background-color: yellow;
+	font-weight: bold;
+}
+body{
+	border: 2px solid red;
+	margin-left:auto;
+	margin-right: auto;
+	width: 750px;
+}

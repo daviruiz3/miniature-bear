@@ -1,0 +1,14 @@
+/***************
+**David R*******
+**Oct 19 2012***
+**Info 343B*****
+****Lab 4*******
+*****maze.css****
+****************/
+#maze {
+	/*border: 2px solid green;*/
+	overflow:hidden;
+}
+.boundary{
+	border: 1px solid black;
+}

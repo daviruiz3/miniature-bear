@@ -1,0 +1,31 @@
+/*
+#b{
+	float: left;
+	width: 30%;
+	clear: both;
+}
+
+#c{
+	background-color: fuchsia;
+	clear: both;
+}
+
+#d{
+	float: right;
+	width: 30%;
+}
+*/
+
+#e{
+	float: left;
+	width: 30%;
+	background-color: blue;
+	margin-right: 1px;
+}
+
+#f{
+	float: left;
+	width: 70%;
+	background-color: red;
+}
+

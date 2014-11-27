@@ -1,0 +1,132 @@
+/*
+	David Ruiz, Jonathan Wai
+	11/5/12
+	INFO 343 B
+	colorpicker.css
+	CSS style sheet for a webpage.
+*/
+
+body{
+	margin-left: auto;
+	margin-right: auto;
+	width: 60em;
+	font-family: Calibri;
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+	color: white;
+	background-color: lightblue;
+	text-shadow: 0.1em 0.1em 0.05em darkgrey;
+}
+
+ul{
+	list-style: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+li{
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+div{
+	font-weight: bold;
+}
+
+li.line{
+	display: inline-block;
+	padding: 0.5em;
+}
+
+.rad{	/*Radio buttons*/
+	padding-top: 0.5em;
+/*	border: solid 1px black; */
+}
+
+.numBOX{
+	width: 60px;
+}
+
+#Rslider{width: 255px; background: red;}
+#Gslider{width: 255px; background: green;}
+#Bslider{width: 255px; background: blue;}
+#Hslider{width: 360px; background: white;}
+#Sslider{width: 100px; background: grey;}
+#Lslider{width: 100px; background: black;}
+
+#rectangle{
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	float:left;
+	width: 30em;
+	height: 30em;
+}
+
+#comp1, #cont1, #comp2, #cont2{
+	padding-top: 0pt;
+	height: 15em; 
+	width: 15em;
+}
+
+#leftside, #rightside{
+	padding-top: 0pt;
+	float:left;
+	display: inline;
+}
+
+header, footer{
+	text-align: center;
+}
+
+header div{
+	background-color: black;
+}
+
+button{
+	font-weight: bold;
+}
+
+#r{color: red;}
+#o{color: orange;}
+#y{color: yellow;}
+#g{color: green;}
+#b{color: blue;}
+#i{color: indigo;}
+#v{color: violet;}
+
+#pageView{
+	border: solid 3px black;
+	font-family: Quando;
+	overflow: hidden;
+}
+
+.column{
+	float: left;
+	width: 50%;
+}
+
+.column2{
+	overflow: hidden;
+}
+
+#pageView img, #pageView iframe{
+ 	height: 110px;
+	width: 200px;
+	border: 5px solid black;
+}
+
+.column, .column2{
+	border: 1px solid black;
+}
+
+header p {margin: 0pt; padding: 0pt;}
+
+#pageView *, h1{
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}

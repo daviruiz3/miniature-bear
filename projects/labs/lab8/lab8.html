@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<!-- 
+	Mini-lab 13: Twitter Search
+	INFO 343 Autumn 2012
+	Morgan Doocy
+	-->
+	<head>
+		<title>Lab 8</title>
+		
+		<style type="text/css">
+			body { font: 100%/1.2 "Lucida Grande", "Lucida Sans Unicode", sans-serif; }
+			input, button { font-size: 150%; }
+			fieldset { width: 18em; }
+			#map_container { width: 30em; height: 30em; }
+		</style>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="lab8.js"></script>
+	</head>
+	
+	<body>
+		<h1>Lab 8</h1>
+		
+		<fieldset>
+			<legend>Reddit Search Search</legend>
+			<input type="text" id="query"><br>
+			<button id="fetch">List Reddit Post</button>
+		</fieldset>
+		
+		<div id="map_container"></div>
+		<ul id="output"></ul>
+	</body>
+</html>

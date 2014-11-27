@@ -1,0 +1,32 @@
+1. (Q)Make B float to the left and take up 30% of the page width. Notice that it remains below A. 
+	Why? 
+	(A)Because A is a block element and by default it takes up the whole width of the page.
+	
+2. (Q)Notice that the background color extends behind B.
+	Why do you think there is space above B?
+	
+	(A) Default paragraph heading.
+	
+3. (Q) Notice that it remains below B. Why?
+	(A) Its not below B its below c and to the right of b because b is floating.
+
+4.(Q) What happens, and why?
+		(A) the div f is below f and only the block element recieves the background-color
+		
+	(Q)Would the same thing happen if you set padding instead?
+		(A) no padding would be the fat outside of the element.
+		
+	(Q)Can you think of a way to specify margins and/or padding around 
+	columns while at the same time dividing columns by percentage of the available width? 
+	margin and padding can be set to zero and width can be set to the desired size.
+	
+	(Q)How would you restrict the amount of space the two columns take up, so that they still 
+	have the same proportions but together take up only 75% of the available page width?
+	
+	(A)Wrap them in div tags specify width, takeaway margin and padding.
+	
+	(Q)Now, how would you go about centering the group of columns on the page?
+	(A) wrap the whole content in a div then margin-left,-right: auto.
+	
+	
+

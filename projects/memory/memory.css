@@ -1,0 +1,80 @@
+/*
+memory.css
+Skeleton stylesheet for HW4: Memory
+INFO 343, Autumn 2012
+Morgan Doocy
+*/
+
+body {
+	font: 100%/1.2 Quando, 'Goudy Old Style', serif;
+	color: white;
+	margin: 0;
+	background-color: black;
+}
+
+h1 {
+	font-weight: normal;
+	margin: .5em 0;
+	text-align: center;
+}
+
+#board {
+	width: 1025px;
+	height: 500px;
+	margin: 2em auto;
+	position: relative;
+	/*	background-color: fuchsia;*/
+
+	/* your styles here */
+	background-color: #680000;
+	border: 2em solid #680000;
+	/*height: 1000px;*/
+}
+
+.card {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	border: solid 1px black;
+	margin: -1px;
+	
+	/* your styles here */
+	
+	-webkit-transform: skew(30deg, -20deg);
+	-moz-transform: skew(30deg, -20deg);
+	-o-transform: skew(30deg, -20deg);
+	-ms-transform: skew(30deg, -20deg);
+	transform: skew(30deg, -20deg);
+	
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	
+	-webkit-transition: all .5s linear;
+	-moz-transition: all .5s linear;
+	-o-transition: all .5s linear;
+	-ms-transition: all .5s linear;
+	transition: all .5s linear;
+}
+
+.card img {
+	width: 100%;
+	position: absolute;
+	
+	/* your styles here */
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+}
+
+/* your styles here */
+
+.front, .rotate{
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+

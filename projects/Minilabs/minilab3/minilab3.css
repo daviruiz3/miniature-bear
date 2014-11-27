@@ -1,0 +1,40 @@
+/*
+#b{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+#a{
+	position: fixed;
+	left: 50px;
+	bottom: 50px;
+}
+*/
+ul{
+	border: 2px solid green;
+	float: left;
+	max-width: 18%;
+}
+#parag{
+	border: 2px solid red;
+	float: right;
+	max-width: 78%;
+	max-width: 500px;
+	min-width: 200px;
+}
+#parag1{
+	border: 2px solid green;
+	float: left;
+}
+
+#parag1, #parag2{
+	max-width: 245px;
+	min-width: 95px;
+}
+#parag2{
+	border: 2px solid red;
+	float: right;
+	margin-right: 1px;
+}
+

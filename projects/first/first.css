@@ -1,0 +1,22 @@
+body{
+	background: black;
+}
+
+#container{
+	/* Centers the Container of the Canvas */
+	margin-right: auto;
+	margin-left: auto;
+
+	text-align: center;
+	color: #0F0;
+	width: 80%;
+}
+
+canvas{
+	/* Centers the content inside the canvas */
+	margin-right: auto;
+	margin-left: auto;
+	border-color: #0F0;
+	border-width: 3px;
+	/*display: block;*/
+}

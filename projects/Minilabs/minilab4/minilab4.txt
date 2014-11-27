@@ -1,0 +1,61 @@
+***************
+**David Ruiz***
+**Info 343 B***
+**Oct 9, 2012**
+***************
+1)  1+1
+	2
+	
+	1 + '1 one'
+	"11 one"
+	
+	1+ 'one'
+	"1one"
+	
+2)  a = "May the fourth be with you!"
+	"May the fourth be with you!"
+	
+	a.length
+	
+3)  b = a.toUpperCase(a)
+
+4)  b.charAt(2)
+
+5)  ar = a.split(" ")
+
+6)  b = b + [,"Die", "Jedi"]
+	ar.pop("MAY")
+    ar.push("DIE")
+
+7)  c = ar.join("{")
+	
+8) 	Math.min(PI, Math.ceil(Math.random()* 5));
+
+9)  Math.tan(60)
+	Math.asin(30)
+	Math.exp(87)
+
+	
+
+	
+
+	
+
+
+
+	
+
+
+	
+
+	
+
+
+
+	
+
+	
+
+
+
+	

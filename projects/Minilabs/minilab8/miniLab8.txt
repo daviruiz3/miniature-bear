@@ -1,0 +1,175 @@
+Jonathan Wai
+David Ruiz
+Cody Stebbins
+INFO 343 B
+Mini-Lab 8
+
++++++++++++++++++++
+
+====================
+SECTION 1: Basic CSS
+====================
+
+1) An ID specifies a specific target.
+   A Class specifies a specified target group.
+   You cannot attach an ID to multiple elements.
+   You can and should attach a class to multiple elements otherwise you should think about using and ID.
+   You can and may need to attach multiple IDs\Classes to the same element. Although you should be careful about doing that.
+
+ --------------------------------------
+   
+2) 
+...
+<body>
+  <img id="foo" src="foo.jpg"> //img needs alt property
+  <div class="bar"> 
+    <em>Lorem ipsum
+	<br/>//multiple br
+    <br/>
+    <strong class="bar">dolor
+	</em>
+	//premature closing of em
+	sit</strong> amet, ...
+	
+	//This class is already specifying a parent of this tag
+	
+  </div>
+  <ul>
+    <li><a href="http://www.google.com/?q=lorem+ipsum&hl=en">Amet!</a></li> //the ampersand is not escaped in the href HTML, a tag does not have an alt property
+    <ul> //new ul must be in a list item
+      <li id="foo">et al.</li>
+	  // Multiple ID's
+	  
+    </ul>
+  </ul>
+</body>
+
+^What's wrong with this^
+	-img needs alt property
+	-img needs a self closing tag
+	-img needs to be inside a block lvl element
+	-multiple br elements
+	-premature closing of em
+	-This class is already specifying a parent of this tag
+	-the ampersand is not escaped in the href HTML
+	-Multiple ID's
+	-Missing head and HTML fields
+	-new ul must be in a list item
+	-div could be represented as a p tag not div
+
+--------------------------------------
+	
+3) 
+
+<a>		 -> 	anchor
+href 	 ->		hyperlink reference
+id		 -> 	identifier (see Question 1)
+class	 ->		classification (see Question 1)
+src		 ->		URL/file source
+<img> 	 -> 	image
+<ul>	 -> 	unordered list
+<body> 	 ->		body of the page (visible content)
+<div> 	 ->	 	division
+<br /> 	 -> 	line break
+<strong> -> 	strong emphasis (bold)
+<em> 	 -> 	emphasis (italics)
+<li> 	 -> 	list item
+
+--------------------------------------
+
+=================
+SECTION 2: Layout
+=================
+
+1) (width, height), padding, border, margin (each with the properties top, left, right, and bottom)
+   To calculate the element's width/height, find the sum total of the element + padding + border + margin.
+   
+--------------------------------------
+
+2a) <display: block> 		-> 		paragraph
+	<display: inline>		->		strong/em
+	<display: inline-block>	-> 		img
+	<display: none>			-> 		div
+	<display: table>		->		table
+	
+ b) The display element morphs the positioning of the element(s) it is applied to.
+ 
+ c) <display: block> 		-> 		maintains padding and margin properties (stack vertically)
+	<display: inline>		->		gets rid of the margin top, padding top, width and height model properties (stack horizontally)
+	<display: inline-block>	-> 		behaves like a block element but displays in an inline manner 
+	<display: none>			-> 		does not display the element
+	<display: table>		->		displayed as a table
+	
+--------------------------------------	
+
+3) Don't create the element
+   Put it behind another element using float
+   CSS property: visibility:hidden (defined in CSS file or applied dynamically by javascript)
+   ---element is hidden and interactive
+   What Uses Display None--CSS
+   ---element is  hidden
+   -----CSS property: display:none (defined in CSS file or applied dynamically by javascript)
+   -----jQuery .hide function: makes element dissapear 
+   -----jQuery .toggle function: makes element toggle 
+   
+ 
+--------------------------------------
+ 
+4) Surround each column in a div and float left or right.
+   For fixed width specify using unit such px, pt, em.
+   For relative width use a percent.
+ 
+ --------------------------------------
+ 
+5) static		-> Default setting, elements rendered in order, appear in the document flow.
+   absoltue		-> Element is positioned relative to first positioned (not static) element.
+   fixed		-> Element positioned relative to browser window
+   relative		-> Element positioned relative to its normal position. ex. offset by 20 pixels from its original position
+   inherit 		-> Element is displayed with the same values as its parent element
+ 
+--------------------------------------
+ 
+===========================
+SECTION 3: The DOM & jQuery
+===========================
+
+1) DOM stands for Document Object Model that is a convention for representing interactive objects in XHTML.
+   TL;DR: It does form controls.
+   
+--------------------------------------
+
+2) A DOM object is a single element
+   A jQuery object is an array-like object that contains a collection of DOM elements
+   
+--------------------------------------   
+
+3)			DOM									vs.				jQuery
+   document.getElementsByTag('tagName');					$('tagName');
+   .innerHTML												html();
+   .style													css();
+   
+--------------------------------------
+
+4) 
+$('foo').innerHTML = 'Hello world, I'm a string!';
+window.onload() = {
+  $bar = 42;
+  document.getElementById('.bar').css('width', $bar);
+}
+
+^What's wrong with this^
+	-.innerHTML cannot be used on a jQuery object (use text function instead)
+	-'hello world' string will break prematurely because of the escaped quote in the word I'm. 
+	-the string should be inside the onload 
+	-window.onload is a property, not a function!
+	-there needs to be a function handler before window.onload
+	-variable $bar has not been previously declared
+	-getElementById is passing a class, instead of a ID like it's supposed to
+	-the .css is a jQuery function used on a DOM object
+	-the dollar sign prefix to variables is only used for jQuery variables
+	-no element called foo perhaps use a #foo or .foo
+	
+--------------------------------------
+
+5) A property is a variable of an object, whereas a variable is a single piece of data
+   A function is a method when it is a property of an object. While a function is independent.

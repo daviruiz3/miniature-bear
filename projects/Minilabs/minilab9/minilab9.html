@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+	<!-- Twitter Bootstrap -->
+	<!--
+	David N. Ruiz
+	Info 343B
+	Oct 28, 2012
+	minilab9.html
+	-->
+	<head>
+		<meta charset="utf-8">
+		<title>Mini Lab 9</title>
+		<!-- Links and Stylesheets-->
+		<link href='http://fonts.googleapis.com/css?family=Quando' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+		<link rel="stylesheet" href="minilab9.css"/>
+		
+		<!--jQuery and javascript-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
+		<script src ="minilab9.js"></script>
+		
+	</head>
+	
+	<body>
+		<header>
+			<h1>I love jQuery!</h1>
+		</header>
+		<nav> 
+			<ul>
+				<li>Home</li>
+				<li>jQuery</li>
+				<li>CSS</li>
+			</ul>
+		</nav>
+		<aside>
+			<ul>
+				<li><label>Email:  <input type="email" placeholder="Email"></label></li>
+				<li><label>Phone:  <input type="tel" placeholder="Phone number"></label></li>
+				<li><label>Search: <input type="search" results="5" placeholder="Search" autosave="info343_html5_search_example"></label></li>
+				<li>Birthdate: <input type="date" value="2012-10-28"></li>
+				<li>Favorite color: <input type="color"></li>
+				<li><progress min="0" max="100" value="33">Installing…</progress></li>
+				<li><progress>Updating…</progress></li>
+				<!--<li><div id="progressbar"></div></li>-->
+			</ul>
+		</aside>
+		
+		<article>
+			<section>
+				<figure>
+					<img src="http://eggplante.com/wp-content/uploads/2010/08/hacker.png" alt="Hacker 1985"/>
+					<img src="http://www.geektech.in/wp-content/uploads/2012/10/Hacker-arrested-in-France-for-stealing-about-500000-euros-using-malware-apps-1.jpg" alt="Pirate"/>
+					<img src="http://cdn.inquisitr.com/wp-content/2011/09/hacker-fares.jpg" alt="You've Been Hacked"/>
+					<figcaption>
+					Hacker Images <a href="http://students.washington.edu/daviruiz/skull.jpg">David N. Ruiz</a>
+					</figcaption>
+				</figure>
+			</section>
+			<section>
+				<div id="draggable" class="ui-widget-content">
+					<p>Drag me around</p>
+
+					<audio controls="controls">
+						<source src="http://students.washington.edu/daviruiz/01.%20Jose%20Jose%20-%20Amar%20Y%20Querer.mp3" type="audio/mp3" />
+					</audio>
+				</div>				
+				<audio controls="controls">
+					<source src="http://students.washington.edu/daviruiz/02.%20Jose%20Jose%20-%20Vamos%20A%20Darnos%20Tiempo.mp3" type="audio/mp3" />
+				</audio>
+				
+				<audio controls="controls">
+					<source src="http://students.washington.edu/daviruiz/Nirvana%20%27About%20A%20Girl%27.mp3" type="audio/mp3" />
+				</audio>
+
+			</section>
+			<section id='stuff'>
+			</section>
+		
+		</article>
+		<footer> 
+			<p>Page <meter value="1" min="1" max="3">1 of 3</meter></li>
+			<p>David N. Ruiz | University of Washington | Informatics BS</P>
+		</footer>
+	</body>
+	
+</html>

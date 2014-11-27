@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<!--
+	twitter.html
+	HTML skeleton file for Lab 10: Mobile Twitter
+	INFO 343, Autumn 2012
+	Morgan Doocy
+	-->
+	<head>
+		<meta charset="utf-8">
+		<title>Twitter Search</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="http://info343.ischool.uw.edu/libs/jquery/mobile/1.2.0/jquery.mobile-1.2.0.min.css" rel="stylesheet">
+		<link href="http://courses.washington.edu/info343/labs/10/twitter.css" rel="stylesheet">
+		
+		<script src="http://info343.ischool.uw.edu/libs/jquery/jquery-1.8.3.min.js"></script>
+		<script src="http://info343.ischool.uw.edu/libs/jquery/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		<script src="http://info343.ischool.uw.edu/libs/jquery/mobile/plugins/jqm.page.params.js"></script>
+		<script src="twitter.js"></script>
+	</head>
+	<body>
+		<section data-role="page" id="search-page">
+			<header data-role="header">
+				<h1>Twitter Search</h1>
+			</header>
+			
+			<section data-role="content">
+				<form id="search-form">
+					<p><input type="search" id="search" placeholder="Twitter"></p>
+				</form>
+				<ul data-role="listview" id="results"></ul>
+			</section>
+		</section>
+		
+		<section data-role="page" id="show-timeline">
+			<header data-role="header">
+				<img id="avatar">
+				<h1></h1>
+				<h2></h2>
+			</header>
+			
+			<section data-role="content">
+				<ul id="user_stats">
+					<li id="user_tweets">
+						<strong></strong>
+						<small>Tweets</small>
+					</li>
+					<li id="user_following">
+						<strong></strong>
+						<small>Following</small>
+					</li>
+					<li id="user_followers">
+						<strong></strong>
+						<small>Followers</small>
+					</li>
+					<li id="user_location">
+						<strong></strong>
+						<small>Location</small>
+					</li>
+				</ul>
+				<ul id="timeline"></ul>
+			</section>
+		</section>
+	</body>
+</html>

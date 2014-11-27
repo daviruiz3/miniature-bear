@@ -1,0 +1,30 @@
+/*David N Ruiz
+// minilab9.css
+ 10- 28- 2012*/
+body{
+	font-family: Quando;
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+}
+nav ul, nav ul li{
+	display: inline-block;
+}
+ul{
+	list-style-type: none;
+}
+
+figure img{
+	display: inline;
+	width: 100px;
+	height: 100px;
+}
+figure{
+	text-align: center;
+}
+footer{
+	text-align: center;
+}
+#draggable { 
+	width: 150px; height: 150px; padding: 0.5em; 
+}

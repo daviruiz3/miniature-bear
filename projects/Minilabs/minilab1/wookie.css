@@ -1,0 +1,33 @@
+html{
+	background-color:#DCDCCA;
+}
+#header{
+	text-align:center;
+}
+#stories{
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+img {
+	height: 200px;
+}
+
+h1, h2, h3{
+	color: #7094FF;
+}
+
+p{
+	background-color:#94704D;
+	border: 5px solid #7094FF;
+	margin: 3em;
+	padding: 1.5em;
+}
+#nextpage{
+	background-color:#3366FF;
+	border: dotted red;
+}
+span.stats{
+	color: white;
+}

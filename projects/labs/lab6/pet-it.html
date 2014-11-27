@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<!--
+	pet-it.html
+	HTML file for Lab 6: Pet-It
+	INFO 343, Autumn 2012
+	-->
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Pet-It</title>
+		
+		<link href="http://courses.washington.edu/info343/labs/6/pet-it.css" type="text/css" rel="stylesheet">
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="pet-it.js" type="text/javascript"></script>
+	</head>
+	
+	<body>
+		<header id="banner">
+			<h1><img src="http://courses.washington.edu/info343/labs/6/banner.jpg" alt="Pet-It"></h1>
+		</header>
+		
+		<aside id="breeds">
+			<header><h2>Breeds</h2></header>
+			<nav>
+				<ul>
+					<li>None selected yet.</li>
+				</ul>
+			</nav>
+		</aside>
+		
+		<section id="main">
+			<div class="column">
+				<img id="pet" src="http://courses.washington.edu/info343/labs/6/puppy.png" alt="cute puppy">
+			</div>
+			
+			<div class="column">
+				<div id="selection">
+					<header><h2>Choose the pet you would like to <q>aw</q> at:</h2></header>
+					<p>
+						<label><input id="dogs" type="radio" name="animal"> Dog</label>
+						<label><input id="cats" type="radio" name="animal"> Cat</label>
+					</p>
+				</div>
+				
+				<div id="description"></div>
+			</div>
+		</section>
+		
+		<aside id="next">
+			<header><h2>Next</h2></header>
+			<img src="http://courses.washington.edu/info343/labs/6/puppy.png" alt="cute puppy">
+		</aside>
+	</body>
+</html>

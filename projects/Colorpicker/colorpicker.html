@@ -1,0 +1,144 @@
+<!--
+	David Ruiz, Jonathan Wai
+	11/5/12
+	INFO 343 B
+	colorpicker.html
+	Adding elements to a webpage to match given functionality specifications.
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		
+		<title>Colorpicker - Color Your World!</title>
+
+		<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+		<link href='//fonts.googleapis.com/css?family=Quando' rel='stylesheet' type='text/css' />
+		<link href="colorpicker.css" type="text/css" rel="stylesheet" /> <!-- Colorpicker.css -->
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script> <!-- jQuery -->
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
+		<script src="Color.js" type="text/javascript" ></script> <!-- Color.js --> 
+		<script src="colorpicker.js" type="text/javascript" ></script> <!-- Colorpicker.js -->
+		
+		
+	</head>
+	
+	<body class="ui-widget-content" style="border: 0;">
+	
+		<h1><span id="r">W</span>
+			<span id="o">E</span>
+			<span id="y">L</span>
+			<span id="g">C</span>
+			<span id="b">O</span>
+			<span id="i">M</span>
+			<span id="v">E</span>
+				to Colorpicker!</h1>
+		
+		<header>
+			<div id="leftside">
+				<div id="comp1"></div>	<!-- Complimentary 1 -->
+				<div id="cont1"></div>	<!-- Contrast 1 -->
+			</div>
+			<div id="rectangle"></div>	<!-- Main Color -->
+			<div id="rightside">
+				<div id="comp2"></div>	<!-- Complimentary 2 -->
+				<div id="cont2"></div>	<!-- Contrast 2 -->
+			</div>
+		</header>
+		
+		<aside>
+			<ul id="masterlist">
+				<li class="rad"><label><input type="radio" name="cc" value="RGB" /> RGB Color Scheme</label>
+					<ul>
+						<li class="line">Red
+							<div id="Rslider"></div>
+						</li>
+						<li class="line">Green
+							<div id="Gslider"></div>
+						</li>
+						<li class="line">Blue
+							<div id="Bslider"></div>
+						</li>
+					</ul>
+				</li>
+					
+				<li class="rad">
+					<label><input type="radio" name="cc" value="HEX" /> Hex Code</label> 
+					#<input type="text" name="hex" value="FFFFFF" class="numBOX" maxLength="6" />
+				</li>
+				
+				<li class="rad"><label><input type="radio" name="cc" value="HSL" /> HSL Color Scheme</label>
+					<ul>
+						<li class="line">Hue
+							<div id="Hslider"></div>
+						</li>
+						<li class="line">Saturation
+							<div id="Sslider"></div>
+						</li>
+						<li class="line">Lightness
+							<div id="Lslider"></div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+				
+			<div id="emph"><button id="previewPage">PREVIEW PAGE</button></div>
+			
+			<div id="pageView" title="You liking the color scheme?">
+				<h4> COMIC FAN </h4>
+				<img src="http://students.washington.edu/daviruiz/batman.bmp" alt="Batman and Superman">
+				<div id = "overall">
+					
+					<iframe src="http://www.youtube.com/embed/u2N9yIVxq_4"></iframe>
+					<iframe src="http://www.youtube.com/embed/qzn7tXGFe2w"></iframe>
+					<iframe src="http://www.youtube.com/embed/sPvkpflsqkw"></iframe>
+					<iframe src="http://www.youtube.com/embed/QAgv_T99bJo"></iframe>
+					
+					<a href="http://www.youtube.com/watch?v=u2N9yIVxq_4"><img src="http://blastr.com/assets_c/2010/11/Superman111810-thumb-100x100-51842.jpg" alt="Superman"></a>
+					<a href="http://www.youtube.com/watch?v=qzn7tXGFe2w"><img src="http://www.avatarist.com/avatars/Comics/Batman/Batman-side-profile.png" alt="Batman"></a>
+					<a href="http://www.youtube.com/watch?v=sPvkpflsqkw"><img src="http://www.hohcomics.com/images/TheFlash_Logo.jpg" alt="The Flash"></a>
+					<a href="http://www.youtube.com/watch?v=C96Gl6dYYgY"><img src="http://images4.wikia.nocookie.net/__cb61206/marvel_dc/images/thumb/b/b7/Animal_Man_%28Shorts%29.JPG/100px-128,473,0,344-Animal_Man_%28Shorts%29.JPG" alt="Animal Man"></a>
+					
+					<div class="column">
+						<p class="Q">Why did Superman die?</p> 
+					</div>
+					<div class="column2">							
+						<p class="A">Becasue he's a wimp!</p>
+					</div>
+					
+
+					<div class="column">
+						<p class="Q">Why did Batman Live? </p>
+					</div>
+					<div class="column2">
+						<p class="A">How dare you ask that question!</p>
+					</div>
+
+
+					<div class="column">
+						<p class="Q">Is the Flash faster then the speed of light?</p>
+					</div>
+					<div class="column2">	
+						<p class="A">No but he can easily match its' speed.</p>
+					</div>
+
+					<div class="column">
+						<p class="Q">Is Animal Man a real hero? </p>
+					</div>
+					<div class="column2">	
+						<p class="A">I would have to say he is the only hero.</p>
+					</div>
+					<p>Jonathan Wai | David Ruiz | INFO 343 | University of Washington iSchool</p>
+				</div>
+			</div>
+		</aside>
+		
+		<footer>
+			<p>Jonathan Wai | David Ruiz | INFO 343 | University of Washington iSchool</p>
+		</footer>
+		
+	</body>
+</html>

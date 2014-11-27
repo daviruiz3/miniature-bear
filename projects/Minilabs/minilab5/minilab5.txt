@@ -1,0 +1,7 @@
+var $para = $('p')
+
+var $bene = $('#benefits')
+
+var $benepara = $('p #benefits')
+
+$benepara.css('background-color', ''blue')

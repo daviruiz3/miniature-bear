@@ -1,0 +1,60 @@
+/***************
+***David R.*****
+**Info 343B*****
+**fontr.css******
+*Oct 12, 2012***
+***************/
+body{
+	width: 750px;
+	margin: 25px auto;
+	font-family: Quando;
+	color: white;
+	background-image: url("http://www.userlogos.org/files/backgrounds/ctach1991/Clouds2560x1440.jpg");
+}
+ul{
+	list-style-type: none;
+}
+#font{
+	float:right;
+	overflow: hidden;
+	height: 124px;
+	padding: 10px;
+}
+#sizes{
+	height: 124px;
+	padding:10px;
+}
+p{
+	text-indent: 1.5em;
+	line-height: 3em;
+	margin: 1em;
+	width: 710px;
+}
+fieldset{
+	padding:0px;
+	margin:0px;
+	background-color:black;
+}
+p:first-letter{
+	font-size: xx-large;
+} 
+
+#font ul, #font ul li{
+	display: inline;
+}
+input[type="text"]{
+	width: 50px;
+}
+
+dl, dt{ 
+	padding: 4px;
+}
+
+dd{ 
+	padding: 2px;
+}
+dt{
+	float: left;
+	padding-left: 1em;
+	overflow: hidden;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<!--
+		hw3_skeleton.html
+		Skeleton HTML file for Homework 3: Fontr
+		INFO 343, Autumn 2012
+		Morgan Doocy
+		-->
+		<!--
+		David Ruiz
+		Info 343B
+		Oct 21, 2012
+		fontr.html
+		-->
+		
+		<meta http-equiv="Content-Type" content="Type=text/html; charset=utf-8" />
+		<title>Fontr – Preview Web Fonts</title>
+		
+		<!-- your stylesheets and scripts go here! -->
+		<link href='http://fonts.googleapis.com/css?family=Quando' rel='stylesheet' type='text/css' />
+		<link href='fontr.css' rel='stylesheet' type='text/css' />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="fontr.js"></script>
+		
+	</head>
+	
+	<body>
+		<h1>Fontr</h1>
+		
+		<div id="controls">
+			<fieldset id="text">
+				<legend>Preview text</legend>
+				
+				<ul>
+					<!--What is the value for?-->
+					<li><label><input type="radio" name="pvT" checked="checked" value="preset"/> Preset:</label> 
+						<select>
+							<option >Font Name</option>
+							<option selected="selected">The quick brown fox jumped over the lazy dog.</option>
+							<option >Grumpy wizards make toxic brew for the evil Queen and Jack.</option>
+							<option >AaBbCcDdEeFfGgHhIiJjKkLlMmOoPpQqRrSsTtUuVvWwXxYyZz 0123456789 .,!?@#$%&amp;*&lt;>(){}[]</option>
+						</select>
+					</li>
+					<li><label><input type="radio" name="pvT" value="lipsum"/> Lipsum:</label> <input type="text" value="4" /> sentences</li>
+					<li><label><input type="radio" name="pvT" value="custom"/> Custom:</label><textarea rows="4" cols="40"></textarea></li>
+				</ul>
+			</fieldset>
+			
+			<fieldset id="font">
+				<legend>Font</legend>
+				<ul>
+					<li><!-- [dropdown menu] -->
+						<select>
+							<option>Helvetica</option>
+							<option>Lucida</option>
+							<option>Grande</option>
+							<option>Arial</option>
+							<option>sans-serif</option>
+							<option>Quando</option>
+						</select>
+					</li>
+					<li><label><input type="checkbox" id="bold"/> Bold</label></li>
+					<li><label><input type="checkbox" id="italic"/> Italic</label></li>
+				</ul>
+			</fieldset>
+		
+			<fieldset id="sizes">
+				<legend>Sizes</legend>
+				<dl>
+					<dt>Size:</dt>
+					<dd>
+						<input type="text" value="2"></input> 
+						<select>
+							<option selected="selected">em</option>
+							<option>px</option>
+							<option>pt</option>
+						</select>
+					</dd>
+					<dt>Line height:</dt>
+					<dd>
+						<input type="text" value="1.2"></input>
+						<select>
+							<option selected="selected">em</option>
+							<option>px</option>
+							<option>pt</option>
+						</select>
+					</dd>
+				</dl>
+			</fieldset>
+		</div>
+		
+		<div id="preview">
+			<fieldset>
+				<legend>Preview</legend>
+				<p></p>
+			</fieldset>
+		</div>
+	</body>
+</html>

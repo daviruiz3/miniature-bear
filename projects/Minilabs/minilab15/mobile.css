@@ -1,0 +1,12 @@
+#contents ul li:nth-child(3n){
+	margin-right: 4%;
+}  
+
+#contents ul li{
+	width: 48%;
+	margin-right: 4%;
+}
+
+#contents ul li:nth-child(2n){
+	margin-right: 0;
+}

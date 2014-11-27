@@ -1,0 +1,138 @@
+/****************
+***David Ruiz****
+**Info 343B******
+**Oct 11, 2012***
+*****************
+****************/
+/*
+    Change all fonts and colors on the page.
+    Adjust line height in at least one rule.
+    Adjust the vertical margins of all header, paragraph, and list elements.
+    Adjust the widths of the central columns, so that they are both fixed-width, both fluid, or some other major change.
+	
+	Beyond: http://twitter.github.com/bootstrap/scaffolding.html#grid
+	logo in the header
+		https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzkUHY8bFUBFLdV1rCJQJUsg74xT7BA934oXOPVHU1FbIESBWQxQ
+		
+		
+*/
+body{
+	font-size: 1.125em;
+	font-family: "Quando", sans-serif;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50em;
+	padding-left: 2em; /*Creates the min 2em empty space*/
+	padding-right: 2em; /*Creates the min 2em empty space*/
+	background-color: black;
+	background-image: url("http://www.desktopedia.com/bulkupload/Windows/part1/Clean%20Gray%20BackGround.jpg");
+	background-size: 100% 100%;
+	
+}
+
+#logo{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+	width: 100px;
+	height: 100px;
+}
+
+h1, h2, h3, p, li{
+	margin-top: .85em;
+	margin-bottom: .85em;
+}
+
+#masthead{
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmgYK4Ohteb2Sj6wvJuq7rq4XEcP64jh_dw3FbqF76Pzwn6hjT");
+	background-color: #5D5D5D;
+	overflow: hidden;
+	padding-left: 1em;
+	padding-right: 1em;
+	color: white;
+}
+#masthead h1, #masthead ul, #masthead ul li, dt dd{
+	display: inline;
+}
+
+#masthead ul li a, a{
+	text-decoration: none;
+	color: white;
+
+}
+
+#masthead ul li a:hover , a:hover{
+	text-decoration: underline;
+	background-color: black;
+	color: white;
+}
+
+#header{
+	font-size: 1.5em;
+	font-weight: normal;
+	font-style: italic;
+	margin-left: 1em;	
+}
+
+/* Set up for top nav links */
+#masthead ul li a{
+		padding-top: .25em;
+		padding-bottom: .25em;
+		padding-left: .5em;
+		padding-right: .5em;
+}
+
+
+/* The above shit is correct!*/
+
+/*Spacing within still needs to be done */
+#column1{
+	background-color: #5D5D5D;
+	width: 12em;
+	font-size: .8em;
+	float: left;
+	border: 1em solid white;
+	padding:.5em;
+}
+#maincontent{
+	background-color:#C1C8CB;
+	overflow:hidden;
+}
+h2, h3{
+	margin-top:0px;
+}
+.blog, #top{
+	overflow: hidden;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding: .5em;
+}
+.blog:hover, #top:hover{
+	background-color: #5D5D5D;
+}
+.blog{
+	margin-top: 1em;
+}
+
+.blog img, #top img{
+	float: right;
+	width: 40%;
+	margin-bottom: 1em;
+	margin-left: 1em;
+}
+
+#overallcontent{
+	background-color: #C1C8CB;
+	margin-top: 1em;
+}
+
+#footer{
+	background-color: #C1C8CB;
+	text-indent: 13em;
+}
+
+p{
+	line-height: 1.3em;
+}

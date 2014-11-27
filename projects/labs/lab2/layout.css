@@ -1,0 +1,55 @@
+#everything{
+	border: 10px solid white;
+	background-color: white;
+	overflow: hidden;
+}
+
+#friends{
+	margin-top: 10px;
+	float: left;
+	width:19%;
+}
+#comments{
+	width:79%;
+	float: right;
+}
+
+#top{
+	border: none;
+	text-align: right;
+	background-color: #A8F0F0;
+}
+
+#top h2{
+	font-size: 14pt;
+}
+
+.section{
+	border: 4px solid #C2E9E9;
+	background-color: #E8FBFB;
+	padding: 5px;
+	margin-top: 10px;
+	text-align: justify;
+	overflow: hidden;
+}
+
+.section img{
+	float: right;
+}
+
+.date{
+	border-bottom: 2px dashed #009097;
+}
+
+body{
+	margin-left: 10%;
+	margin-right:10%;
+	background-image: url("http://courses.washington.edu/info343/labs/2/background.gif");
+}
+#friends{
+	border: 5px solid blue;
+	text-align: left;
+}
+*:hover{
+	background-color: yellow;
+}

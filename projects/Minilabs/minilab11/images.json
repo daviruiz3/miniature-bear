@@ -1,0 +1,14 @@
+[
+	{ "file": "http://info343.ischool.uw.edu/labs/5/avocado.jpg",    "caption": "Avocado" },
+	{ "file": "http://info343.ischool.uw.edu/labs/5/beach.jpg",      "caption": "Beach" },
+	{ "file": "http://info343.ischool.uw.edu/labs/5/biebs.jpg",      "caption": "Biebs" },
+	{ "file": "http://info343.ischool.uw.edu/labs/5/bling.jpg",      "caption": "Bling" },
+	{ "file": "http://info343.ischool.uw.edu/labs/5/cat.jpg",        "caption": "Cat" },
+	{ "file": "http://info343.ischool.uw.edu/labs/5/dew.jpg",        "caption": "Dew" },
+	{ "file": "http://info343.ischool.uw.edu/labs/5/fall.jpg",       "caption": "Fall" },
+	{ "file": "http://info343.ischool.uw.edu/labs/5/freeway.jpg",    "caption": "Freeway" },
+	{ "file": "http://info343.ischool.uw.edu/labs/5/hongkong.jpg",   "caption": "Hong Kong" },
+	{ "file": "http://info343.ischool.uw.edu/labs/5/leaves.jpg",     "caption": "Leaves" },
+	{ "file": "http://info343.ischool.uw.edu/labs/5/reflection.jpg", "caption": "Reflection" },
+	{ "file": "http://info343.ischool.uw.edu/labs/5/tuners.jpg",     "caption": "Tuners" }
+]

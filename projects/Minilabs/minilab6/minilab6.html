@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!--
+		minilab6.html
+		Skeleton file for Mini-Lab 6: Timers
+		INFO 343, Autumn 2012
+		Morgan Doocy
+		-->
+		<!--
+		**David R.******
+		**Info 343B*****
+		**Oct 19, 2012**
+		***minilab6.js***
+		****************/
+		-->
+		<title>Mini-lab 6: Countdown Timer</title>
+		<style type="text/css">
+			body {
+				font-family: "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+				margin: 3em auto;
+			}
+			h1 {
+				text-align: center;
+			}
+			#countdown {
+				position: fixed;
+				background-color: lightgray;
+				border: solid 1px gray;
+				width: 10em;
+				top: 0;
+				left: 0;
+				text-align: center;
+			}
+			.rect {
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				border: solid 1px black;
+			}
+		</style>
+		
+		<!-- This links to the jQuery library -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+		
+		<!-- This links to your JavaScript file, minilab6.js -->
+		<script type="text/javascript" src="minilab6.js"></script>
+	</head>
+	
+	<body>
+		<h1>Mini-lab 6: Countdown Timer</h1>
+		
+		<div id="countdown">
+			<p><input type="text" id="seconds" size="3" /></p>
+			<p><button id="begin">Count down!</button></p>
+		</div>
+		
+	</body>
+</html>
