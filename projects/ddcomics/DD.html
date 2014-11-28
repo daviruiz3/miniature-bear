@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
+		<script src="DD.js"></script>
+		
+		<link href='http://fonts.googleapis.com/css?family=Rancho|Economica' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/themes/base/jquery-ui.css"/>		
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+		<link rel="stylesheet" type="text/css" href="project.css" media="screen"/>	
+		<link rel="stylesheet" href="mobile.css" type="text/css" media="screen and (max-width: 600px)">
+		
+		
+		<title>Comic Grail</title>
+	</head>
+
+	<body>
+		<h1 id = "topBanner">DD Comics : The Holy Grail of Comics</h1>
+		<div>
+			<p><input type="text" id="query" autofocus="autofocus" placeholder="Search for Superhero!"><button id="querySubmit">Search</button></p>
+		</div>
+		<p id ="results"></p>
+
+		<div id ="columns">
+			<div id ="loading"><img src="ajax-loader.gif" alt="ajaxLoading"></div>
+			
+			<div class ="titles">
+				<h2 id="heroesTitle">Superheroes</h2>
+				<div id ="characters">
+				</div>
+			</div>
+
+			<div class ="titles">		
+				<h2 id="volumesTitle">Volumes</h2>			
+				<div id ="volumes">
+				</div>
+			</div>
+			
+			<div class ="titles">
+				<h2 id="teamsTitle">Teams</h2>
+				<div id ="teams">
+				</div>
+			</div>			
+		</div>
+		
+		<div id="volDetails">
+			<div class="col">
+				
+			</div>
+		</div>
+
+		<div id="charDetails">
+			<div class="col">
+				
+			</div>
+		</div>
+
+		<div id="teamsDetails">
+			<div class="col">
+				
+			</div>
+		</div>
+	</body>
+</html> 
