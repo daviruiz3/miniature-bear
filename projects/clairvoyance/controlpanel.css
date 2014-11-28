@@ -1,0 +1,147 @@
+html{
+	position: relative;
+	height: 90%;
+}
+
+body {
+	position: relative;
+	height: 100%;
+}
+
+#logo {
+	position: relative;
+	width: 30%;
+	height: 35%;
+ }
+
+ .userinfo{
+	position:absolute;
+	top: 0;
+	right: 0;
+	margin: 30px;
+ }
+ 
+ .user{
+	color: blue;
+	font-weight: bold;
+	display: inline;
+ }
+ 
+ .reputation{
+	color: red;
+	display: inline;
+ }
+ 
+ .signout{
+	text-align: right;
+ }
+
+.navbar {
+	position: relative;
+    margin-bottom: 10px;
+	overflow: auto;
+}
+
+.navbar-inner {
+	padding: 0px;
+}
+
+.nav {
+	width: 100%; 
+	position: relative;
+}
+
+.nav li{
+	width: 50%;
+	text-align: center;
+}
+
+.container-fluid{
+	position: relative;
+	height: 100%;
+}
+
+.row-fluid {
+	width: auto;
+	height: 100%
+}
+
+.row-fluid .span25{
+	height: 25%;
+}
+
+.row-fluid .span75{
+	height: 75%;
+	margin: 0;
+}
+
+.span75 .container-fluid{
+	padding: 0;
+}
+
+.row-fluid .span75 [class*="span"]{
+	border-style: solid;
+	border-width: 2px;
+	height: 100%;
+	margin: 15px;
+}
+
+.span75 .row-fluid .span20{
+	margin-left: 0px;
+	width: 20%;
+}
+
+.span20 .user-info{
+	float: left;
+	padding: 15px;
+}
+
+.span20 .user-info h3{
+	color: blue;
+}
+
+.span20 .user-info form{
+	display: inline;
+}
+
+.span20 .user-info .user{
+	font-size: 24px;
+}
+
+.span20 .status form{
+	display: inline;
+}
+
+.span75 .row-fluid .span30 {
+	width: 30%;
+	padding: 15px;
+}
+
+.span30 .create {
+	text-align: center;
+}
+
+.span30 textarea {
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.span30 .option {
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.option label {
+	display: inline;
+	margin-right: 30px;
+}
+
+.span75 .row-fluid .span45{
+	width: 45%;
+	overflow-y: auto;
+	margin-right: 0px;
+}
+
+.navbar {
+	margin-top: 40px;
+}

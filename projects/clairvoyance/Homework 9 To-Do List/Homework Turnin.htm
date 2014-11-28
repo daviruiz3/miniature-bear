@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://gradeit.cs.washington.edu/uwcse190m//turnin/code/turnin.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		
+		<title>Homework Turnin</title>
+		<style type="text/css">
+/* Grade-It homework turnin page style sheet */
+
+a {
+	color: #aa4400;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #FFFF99;
+	text-decoration: underline;
+}
+
+a img {
+	border-width: 0;
+}
+
+.aside {
+	font-size: small;
+}
+
+body {
+	background-color: #ffffff;
+	color: #000000;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", "Helvetica Neue", "Helvetica", Verdana, Arial, sans-serif;
+	font-size: 10pt;
+	padding: 1em;
+}
+
+#cheatpolicyexplain {
+	color: #800;
+	font-weight: bold;
+}
+
+.cheatwarning {
+	text-indent: -2em;
+	margin-left: 3em;
+}
+
+.deemphasized {
+	color: #666666;
+}
+
+dt {
+	font-weight: bold;
+}
+
+.emphasized {
+	font-weight: bold;
+}
+
+.error, .errorfixed {
+	background-color: #FFFFDD;
+	border: thin solid gray;
+	font-weight: bold;
+}
+
+.error {
+	color: red;
+}
+
+.errorfixed {
+	color: #000099;
+}
+
+#errormessage, .error, #warningmessage, .warning {
+	font-size: 110%;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin: 1em;
+}
+
+#errormessage, .error {
+	background-color: #ffe8e8;
+	border: 3px solid #777777;
+	color: red;
+	font-size: larger;
+}
+
+.excitingnews {
+	background-color: #eeeeff;
+	border: 2px dashed #00AA00;
+	overflow: hidden;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.filename {
+	text-decoration: none;
+}
+
+form, #main {
+	padding-top: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 70em;
+}
+
+form td, form th {
+	padding-top: 0.3em;
+}
+
+h1 {
+	margin: 0em;
+	/* margin-top: 0.25em; */
+	padding-top: 0.25em;
+}
+
+.highlight {
+	background-color: yellow;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+img.icon {
+	height: 16px;
+	width: 16px;
+	vertical-align: baseline;
+}
+
+img.imageicon, img.sidebaricon {
+	border: none;
+	height: 16px;
+	width: 16px;
+	vertical-align: middle;
+}
+
+.leftcolumn {
+	padding-right: 20px;
+	text-align: left;
+	vertical-align: top;
+	width: 150px;
+}
+
+#loading {
+	display: none;
+}
+
+.noteslist li {
+	margin-bottom: 0.5em;
+}
+
+.saveforyourrecords {
+	background-color: #ffc;
+	border: 1px dashed red;
+	padding: 0.5em;
+}
+
+.separated {
+	padding-bottom: 2em;
+}
+
+.separatedtop {
+	padding-top: 2em;
+}
+
+.success {
+	color: #070;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+.acceptedproblems {
+	color: #730;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+table {
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+	color: #000000;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+td, th {
+	vertical-align: top;
+	white-space: nowrap;
+}
+
+td.spaced {
+	padding-right: 20px;
+}
+
+tr.evenrow {
+	background-color: #EEEEEE;
+}
+
+.turninlink {
+	background-color: #EEEEEE;
+	border: 2px solid #CCCCCC;
+	float: right;
+	margin-right: 1em;
+	padding: 0.5em;
+}
+
+.urgent {
+	color: #990000;
+	font-weight: bold;
+}
+
+/* ------------------- */
+button:hover, input[type="submit"]:hover {
+	color: #666600;
+}
+
+h1 {
+	padding: 0em;
+	padding-top: 0.25em;
+	text-align: center;
+}
+
+h2 {
+	line-height: 16pt;
+}
+
+h2.spaced {
+	margin-top: 2em;
+}
+
+.invalid {
+	background-color: #ffff00;
+}
+
+#warningmessage, .warning {
+	background-color: #fff8dd;
+	border: 3px solid rgb(125, 85, 0) /* rgb(205, 135, 0) */;
+	color: rgb(125, 85, 0);
+	font-size: larger;
+}
+
+#errormessage p, #warningmessage p, .warning p {
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
+
+.failure {
+	color: red;
+	font-weight: bold;
+}
+
+.filename {
+	font-family: monospace;
+}
+
+hr {
+	margin-top: 2em;
+}
+
+input[type="submit"] {
+	font-family: Arial, sans-serif;
+	font-size: 18pt;
+	font-weight: bold;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.nametable {
+	 border: none;
+	 border-collapse: collapse;
+	 margin: 0em;
+	 padding: 0em;
+}
+
+.nametable td, .nametable th, td.filename {
+	padding-right: 0.5em;
+}
+
+#submitarea {
+	margin-bottom: 2em;
+	margin-top: 2em;
+	text-align: center;
+}
+
+.surveyarea, .tabcell {
+	display: none;
+}
+
+th {
+	padding-right: 2em;
+	text-align: left;
+}
+
+/* */
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+.codefile {
+	border: 2px solid #2F6FAB;
+	margin-bottom: 1em;
+	padding: 0;
+}
+
+.codefile h2 {
+	background-color: #2F6FAB;
+	color: white;
+	margin: 0;
+	padding: 0 0.5em 0.25em;
+}
+
+.codefile pre, .codefile xmp {
+	background-color: #F9F9F9;
+	line-height: 1.05em;
+	margin: 0;
+	padding: 0.75em;
+	overflow: auto;
+}
+
+.columnlabel {
+	float: left;
+	font-weight: bold;
+	width: 9em;
+}
+
+.errormessage, .warningmessage {
+	background-color: #FFEEEE;
+	border: 2px dashed red;
+	margin-left: 2em;
+	margin-right: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.errormessage h2, .warningmessage h2 {
+	color: red;
+	font-size: larger;
+}
+
+.errormessage pre {
+	font-size: larger;
+	font-weight: bold;
+}
+
+h1 {
+	background-color: #EEEEEE;
+	border-bottom: 2px solid gray;
+	text-align: center;
+}
+
+h1, h2, h3 {
+	white-space: nowrap;
+}
+
+.info {
+	text-align: center;
+}
+
+#main {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#studentinfoheader {
+	font-size: 12pt;
+	font-weight: normal;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 20em;
+	width: 20em;
+}
+
+.tooltip {
+	background-color: #FFFFAA;
+	border: 1px solid #999999;
+	margin: 0.5em;
+}
+
+.warningmessage {
+	background-color: #FFFFDD;
+	border: 2px dashed yellow;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+/* geshi styles */
+.codefile .imp {font-weight: bold; color: red;}
+.codefile li, .codefile .li1 {font-weight: normal; vertical-align:top;}
+.codefile .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.codefile .li2 {font-weight: bold; vertical-align:top;}
+.codefile .kw1 {color: #000088; font-weight: bold;}
+.codefile .kw2 {color: #000088; font-weight: bold;}
+.codefile .kw1 {color: #000000;  font-weight: bold;}
+.codefile .kw2 {color: #000000; font-weight: bold;}
+.codefile .kw3 {color: #006600; font-weight: bold;}
+.codefile .kw4 {color: #006600; font-weight: bold;}
+.codefile .kw5 {color: #003399; font-weight: bold;}
+.codefile .kw6 {color: #003399; font-weight: bold;}
+.codefile .kw7 {color: #003399; font-weight: bold;}
+.codefile .kw8 {color: #003399; font-weight: bold;}
+.codefile .kw9 {color: #003399; font-weight: bold;}
+.codefile .kw10 {color: #003399; font-weight: bold;}
+.codefile .kw11 {color: #003399; font-weight: bold;}
+.codefile .kw12 {color: #003399; font-weight: bold;}
+.codefile .kw13 {color: #003399; font-weight: bold;}
+.codefile .kw14 {color: #003399; font-weight: bold;}
+.codefile .kw15 {color: #003399; font-weight: bold;}
+.codefile .kw16 {color: #003399; font-weight: bold;}
+.codefile .kw17 {color: #003399; font-weight: bold;}
+.codefile .kw18 {color: #003399; font-weight: bold;}
+.codefile .kw19 {color: #003399; font-weight: bold;}
+.codefile .kw20 {color: #003399; font-weight: bold;}
+.codefile .kw21 {color: #003399; font-weight: bold;}
+.codefile .kw22 {color: #003399; font-weight: bold;}
+.codefile .kw23 {color: #003399; font-weight: bold;}
+.codefile .kw24 {color: #003399; font-weight: bold;}
+.codefile .kw25 {color: #003399; font-weight: bold;}
+.codefile .kw26 {color: #003399; font-weight: bold;}
+.codefile .kw27 {color: #003399; font-weight: bold;}
+.codefile .kw28 {color: #003399; font-weight: bold;}
+.codefile .kw29 {color: #003399; font-weight: bold;}
+.codefile .kw30 {color: #003399; font-weight: bold;}
+.codefile .kw31 {color: #003399; font-weight: bold;}
+.codefile .kw32 {color: #003399; font-weight: bold;}
+.codefile .kw33 {color: #003399; font-weight: bold;}
+.codefile .kw34 {color: #003399; font-weight: bold;}
+.codefile .kw35 {color: #003399; font-weight: bold;}
+.codefile .kw36 {color: #003399; font-weight: bold;}
+.codefile .kw37 {color: #003399; font-weight: bold;}
+.codefile .kw38 {color: #003399; font-weight: bold;}
+.codefile .kw39 {color: #003399; font-weight: bold;}
+.codefile .kw40 {color: #003399; font-weight: bold;}
+.codefile .kw41 {color: #003399; font-weight: bold;}
+.codefile .kw42 {color: #003399; font-weight: bold;}
+.codefile .kw43 {color: #003399; font-weight: bold;}
+.codefile .kw44 {color: #003399; font-weight: bold;}
+.codefile .kw45 {color: #003399; font-weight: bold;}
+.codefile .kw46 {color: #003399; font-weight: bold;}
+.codefile .kw47 {color: #003399; font-weight: bold;}
+.codefile .kw48 {color: #003399; font-weight: bold;}
+.codefile .kw49 {color: #003399; font-weight: bold;}
+.codefile .kw50 {color: #003399; font-weight: bold;}
+.codefile .kw51 {color: #003399; font-weight: bold;}
+.codefile .kw52 {color: #003399; font-weight: bold;}
+.codefile .kw53 {color: #003399; font-weight: bold;}
+.codefile .kw54 {color: #003399; font-weight: bold;}
+.codefile .kw55 {color: #003399; font-weight: bold;}
+.codefile .kw56 {color: #003399; font-weight: bold;}
+.codefile .kw57 {color: #003399; font-weight: bold;}
+.codefile .kw58 {color: #003399; font-weight: bold;}
+.codefile .kw59 {color: #003399; font-weight: bold;}
+.codefile .kw60 {color: #003399; font-weight: bold;}
+.codefile .kw61 {color: #003399; font-weight: bold;}
+.codefile .kw62 {color: #003399; font-weight: bold;}
+.codefile .kw63 {color: #003399; font-weight: bold;}
+.codefile .kw64 {color: #003399; font-weight: bold;}
+.codefile .kw65 {color: #003399; font-weight: bold;}
+.codefile .kw66 {color: #003399; font-weight: bold;}
+.codefile .kw67 {color: #003399; font-weight: bold;}
+.codefile .kw68 {color: #003399; font-weight: bold;}
+.codefile .kw69 {color: #003399; font-weight: bold;}
+.codefile .kw70 {color: #003399; font-weight: bold;}
+.codefile .kw71 {color: #003399; font-weight: bold;}
+.codefile .kw72 {color: #003399; font-weight: bold;}
+.codefile .kw73 {color: #003399; font-weight: bold;}
+.codefile .kw74 {color: #003399; font-weight: bold;}
+.codefile .kw75 {color: #003399; font-weight: bold;}
+.codefile .kw76 {color: #003399; font-weight: bold;}
+.codefile .kw77 {color: #003399; font-weight: bold;}
+.codefile .kw78 {color: #003399; font-weight: bold;}
+.codefile .kw79 {color: #003399; font-weight: bold;}
+.codefile .kw80 {color: #003399; font-weight: bold;}
+.codefile .kw81 {color: #003399; font-weight: bold;}
+.codefile .kw82 {color: #003399; font-weight: bold;}
+.codefile .kw83 {color: #003399; font-weight: bold;}
+.codefile .kw84 {color: #003399; font-weight: bold;}
+.codefile .kw85 {color: #003399; font-weight: bold;}
+.codefile .kw86 {color: #003399; font-weight: bold;}
+.codefile .kw87 {color: #003399; font-weight: bold;}
+.codefile .kw88 {color: #003399; font-weight: bold;}
+.codefile .kw89 {color: #003399; font-weight: bold;}
+.codefile .kw90 {color: #003399; font-weight: bold;}
+.codefile .kw91 {color: #003399; font-weight: bold;}
+.codefile .kw92 {color: #003399; font-weight: bold;}
+.codefile .kw93 {color: #003399; font-weight: bold;}
+.codefile .kw94 {color: #003399; font-weight: bold;}
+.codefile .kw95 {color: #003399; font-weight: bold;}
+.codefile .kw96 {color: #003399; font-weight: bold;}
+.codefile .kw97 {color: #003399; font-weight: bold;}
+.codefile .kw98 {color: #003399; font-weight: bold;}
+.codefile .kw99 {color: #003399; font-weight: bold;}
+.codefile .kw100 {color: #003399; font-weight: bold;}
+.codefile .kw101 {color: #003399; font-weight: bold;}
+.codefile .kw102 {color: #003399; font-weight: bold;}
+.codefile .kw103 {color: #003399; font-weight: bold;}
+.codefile .kw104 {color: #003399; font-weight: bold;}
+.codefile .kw105 {color: #003399; font-weight: bold;}
+.codefile .kw106 {color: #003399; font-weight: bold;}
+.codefile .kw107 {color: #003399; font-weight: bold;}
+.codefile .kw108 {color: #003399; font-weight: bold;}
+.codefile .kw109 {color: #003399; font-weight: bold;}
+.codefile .kw110 {color: #003399; font-weight: bold;}
+.codefile .kw111 {color: #003399; font-weight: bold;}
+.codefile .kw112 {color: #003399; font-weight: bold;}
+.codefile .kw113 {color: #003399; font-weight: bold;}
+.codefile .kw114 {color: #003399; font-weight: bold;}
+.codefile .kw115 {color: #003399; font-weight: bold;}
+.codefile .kw116 {color: #003399; font-weight: bold;}
+.codefile .kw117 {color: #003399; font-weight: bold;}
+.codefile .kw118 {color: #003399; font-weight: bold;}
+.codefile .kw119 {color: #003399; font-weight: bold;}
+.codefile .kw120 {color: #003399; font-weight: bold;}
+.codefile .kw121 {color: #003399; font-weight: bold;}
+.codefile .kw122 {color: #003399; font-weight: bold;}
+.codefile .kw123 {color: #003399; font-weight: bold;}
+.codefile .kw124 {color: #003399; font-weight: bold;}
+.codefile .kw125 {color: #003399; font-weight: bold;}
+.codefile .kw126 {color: #003399; font-weight: bold;}
+.codefile .kw127 {color: #003399; font-weight: bold;}
+.codefile .kw128 {color: #003399; font-weight: bold;}
+.codefile .kw129 {color: #003399; font-weight: bold;}
+.codefile .kw130 {color: #003399; font-weight: bold;}
+.codefile .kw131 {color: #003399; font-weight: bold;}
+.codefile .kw132 {color: #003399; font-weight: bold;}
+.codefile .kw133 {color: #003399; font-weight: bold;}
+.codefile .kw134 {color: #003399; font-weight: bold;}
+.codefile .kw135 {color: #003399; font-weight: bold;}
+.codefile .kw136 {color: #003399; font-weight: bold;}
+.codefile .kw137 {color: #003399; font-weight: bold;}
+.codefile .kw138 {color: #003399; font-weight: bold;}
+.codefile .kw139 {color: #003399; font-weight: bold;}
+.codefile .kw140 {color: #003399; font-weight: bold;}
+.codefile .kw141 {color: #003399; font-weight: bold;}
+.codefile .kw142 {color: #003399; font-weight: bold;}
+.codefile .kw143 {color: #003399; font-weight: bold;}
+.codefile .kw144 {color: #003399; font-weight: bold;}
+.codefile .kw145 {color: #003399; font-weight: bold;}
+.codefile .kw146 {color: #003399; font-weight: bold;}
+.codefile .kw147 {color: #003399; font-weight: bold;}
+.codefile .kw148 {color: #003399; font-weight: bold;}
+.codefile .kw149 {color: #003399; font-weight: bold;}
+.codefile .kw150 {color: #003399; font-weight: bold;}
+.codefile .kw151 {color: #003399; font-weight: bold;}
+.codefile .kw152 {color: #003399; font-weight: bold;}
+.codefile .kw153 {color: #003399; font-weight: bold;}
+.codefile .kw154 {color: #003399; font-weight: bold;}
+.codefile .kw155 {color: #003399; font-weight: bold;}
+.codefile .kw156 {color: #003399; font-weight: bold;}
+.codefile .kw157 {color: #003399; font-weight: bold;}
+.codefile .kw158 {color: #003399; font-weight: bold;}
+.codefile .kw159 {color: #003399; font-weight: bold;}
+.codefile .kw160 {color: #003399; font-weight: bold;}
+.codefile .kw161 {color: #003399; font-weight: bold;}
+.codefile .kw162 {color: #003399; font-weight: bold;}
+.codefile .kw163 {color: #003399; font-weight: bold;}
+.codefile .kw164 {color: #003399; font-weight: bold;}
+.codefile .kw165 {color: #003399; font-weight: bold;}
+.codefile .kw166 {color: #003399; font-weight: bold;}
+.codefile .co1,
+.codefile .co2,
+.codefile .co3,
+.codefile .coMULTI {color: #a1a100;}
+
+/*
+.codefile .co2 {color: #ff0000; font-style: italic;}
+.codefile .co3 {color: #008000; font-style: italic;}
+.codefile .coMULTI {color: #808080; font-style: italic;}
+*/
+.codefile .es0 {color: #000099; font-weight: bold;}
+.codefile .es2 {color: #000099; font-weight: bold;}
+.codefile .br0 {color: #00AA00;}
+.codefile .sy0 {color: #00AA00;}
+.codefile .st0 {color: #aa0000;}
+.codefile .nu0 {color: #cc66cc;}
+.codefile .re0 {color: #cc00cc;}
+.codefile .re1 {color: #6666ff;}
+.codefile .re2 {color: #3333ff;}
+.codefile .re3 {color: #933;}
+.codefile .ln-xtra, .codefile li.ln-xtra, .codefile div.ln-xtra {background-color: #ffc;}
+.codefile span.xtra { display:block; }
+.codefile .sc-2 {color: #404040;}
+.codefile .sc-1 {color: #808080; font-style: italic;}
+.codefile .sc0 {color: #00bbdd;}
+.codefile .sc1 {color: #ddbb00;}
+.codefile .sc2 {color: #009900;}
+		</style>
+
+		<style type="text/css" media="print">
+.codefile {
+	border: 1px dashed #2F6FAB;
+}
+
+.codefile pre, .codefile xmp {
+	font-size: 9pt;
+	letter-spacing: -0.5pt;
+	line-height: 1em;
+	margin: 0;
+	padding: 0.25em;
+	overflow: hidden;
+}
+
+.saveforyourrecords, .tooltip {
+	display: none;
+}
+		</style>
+	</head>
+
+	<body>
+		<h1>Homework Turnin</h1>
+
+
+<div id="main">
+	<h2 id="studentinfoheader">
+		<span class="columnlabel">Name:</span>
+		Augustus		Charles		Yuan		<br>
+
+		<span class="columnlabel">Email:</span>
+		augbog@uw.edu		<br>
+		
+					<span class="columnlabel">Student ID:</span>
+			1026975			<br>
+		
+					<span class="columnlabel">Section:</span>
+			MX			<br>
+		
+		<span class="columnlabel">Course:</span>
+		CSE 		190m		12sp		<br>
+
+		<span class="columnlabel">Assignment:</span>
+		hw9	</h2>
+
+
+	<h2 id="studentinfoheader">
+		<span class="columnlabel">Receipt ID:</span>
+		13101040e07ee644ce0b7918afeb96ad	</h2>
+
+
+<!--
+<div class="warning">
+	NOTE: Emailed receipts temporarily disabled because of a server problem.  Please save a copy of this web page because you won't be receiving a receipt email.
+</div>
+-->
+
+	
+	<h3 class="success">Turnin Successful!</h3>
+
+	<p class="saveforyourrecords">
+		Please <strong style="color: #090; background-color: #ffb">save or print a copy of this page</strong> for your records.  A receipt has also been emailed to you, but you should still save or print a copy of this web page to make certain that you have proof of your turnin.  <strong>If your files become lost or damaged and you do not have any record of your receipt, we will not be able to give you any credit for your work.</strong>
+	</p>
+	
+		
+	<p>
+		The following file(s) were received:
+	</p>
+
+	
+
+		<div class="codefile">
+			<h2>
+				top.html &nbsp; &nbsp; 
+				<span class="aside">(1145 bytes)</span>
+			</h2>
+			
+			<pre><pre class="html5"><span class="sc-1">&lt;!--Augustus Yuan 1027965</span>
+<span class="sc-1">CSE 190MX Tanner</span>
+<span class="sc-1">HW9 Remember the Cow: This page serves as the top part of the front page--&gt;</span>
+<span class="sc0">&lt;!DOCTYPE html&gt;</span>
+<span class="sc2">&lt;<span class="kw2">html</span>&gt;</span>
+    <span class="sc2">&lt;<span class="kw2">head</span>&gt;</span>
+        <span class="sc2">&lt;<span class="kw2">title</span>&gt;</span>Remember the Cow<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">title</span>&gt;</span>
+&nbsp;
+        <span class="sc2">&lt;<span class="kw2">link</span> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"cow.css"</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/css"</span> <span class="kw3">rel</span><span class="sy0">=</span><span class="st0">"stylesheet"</span> <span class="sy0">/</span>&gt;</span>
+        <span class="sc2">&lt;<span class="kw2">link</span> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"https://www.cs.washington.edu/education/courses/cse190m/12sp/homework/9/favicon.ico"</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"image/ico"</span> <span class="kw3">rel</span><span class="sy0">=</span><span class="st0">"shortcut icon"</span> <span class="sy0">/</span>&gt;</span>
+&nbsp;
+        <span class="sc2">&lt;<span class="kw2">script</span> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">"https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js"</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span>&gt;&lt;<span class="sy0">/</span><span class="kw2">script</span>&gt;</span>
+        <span class="sc2">&lt;<span class="kw2">script</span> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">"https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span>&gt;&lt;<span class="sy0">/</span><span class="kw2">script</span>&gt;</span>
+        <span class="sc2">&lt;<span class="kw2">script</span> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">"https://www.cs.washington.edu/education/courses/cse190m/12sp/homework/9/provided.js"</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span>&gt;&lt;<span class="sy0">/</span><span class="kw2">script</span>&gt;</span>
+        <span class="sc2">&lt;<span class="kw2">script</span> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">"todolist.js"</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span>&gt;&lt;<span class="sy0">/</span><span class="kw2">script</span>&gt;</span>
+    <span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">head</span>&gt;</span>
+&nbsp;
+    <span class="sc2">&lt;<span class="kw2">body</span>&gt;</span>
+        <span class="sc2">&lt;<span class="kw2">div</span> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">"headfoot"</span>&gt;</span>
+            <span class="sc2">&lt;<span class="kw2">h1</span>&gt;</span>
+                <span class="sc2">&lt;<span class="kw2">img</span> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">"https://www.cs.washington.edu/education/courses/cse190m/12sp/homework/9/logo.gif"</span> <span class="kw3">alt</span><span class="sy0">=</span><span class="st0">"logo"</span> <span class="sy0">/</span>&gt;</span>
+                Remember<span class="sc2">&lt;<span class="kw2">br</span> <span class="sy0">/</span>&gt;</span>the Cow
+            <span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">h1</span>&gt;</span>
+        <span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">div</span>&gt;</span></pre></pre>
+		</div>
+
+		
+		<div class="codefile">
+			<h2>
+				bottom.html &nbsp; &nbsp; 
+				<span class="aside">(970 bytes)</span>
+			</h2>
+			
+			<pre><pre class="html5"><span class="sc-1">&lt;!--Augustus Yuan 1027965</span>
+<span class="sc-1">CSE 190MX Tanner</span>
+<span class="sc-1">HW9 Remember the Cow: This page serves as the ending footer of the front page--&gt;</span>
+        <span class="sc2">&lt;<span class="kw2">div</span> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">"headfoot"</span>&gt;</span>
+            <span class="sc2">&lt;<span class="kw2">p</span>&gt;</span>
+                "Remember The Cow is nice, but it's a total copy of another site." - PCWorld <span class="sc2">&lt;<span class="kw2">br</span> <span class="sy0">/</span>&gt;</span>
+                All pages and content <span class="sc1">&amp;copy;</span> Copyright CowPie Inc.
+            <span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">p</span>&gt;</span>
+&nbsp;
+            <span class="sc2">&lt;<span class="kw2">div</span> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">"w3c"</span>&gt;</span>
+                <span class="sc2">&lt;<span class="kw2">a</span> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"https://webster.cs.washington.edu/validate-html.php"</span>&gt;</span>
+                    <span class="sc2">&lt;<span class="kw2">img</span> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">"https://webster.cs.washington.edu/w3c-html.png"</span> <span class="kw3">alt</span><span class="sy0">=</span><span class="st0">"Valid HTML"</span> <span class="sy0">/</span>&gt;&lt;<span class="sy0">/</span><span class="kw2">a</span>&gt;</span>
+                <span class="sc2">&lt;<span class="kw2">a</span> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"https://webster.cs.washington.edu/validate-css.php"</span>&gt;</span>
+                    <span class="sc2">&lt;<span class="kw2">img</span> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">"https://webster.cs.washington.edu/w3c-css.png"</span> <span class="kw3">alt</span><span class="sy0">=</span><span class="st0">"Valid CSS"</span> <span class="sy0">/</span>&gt;&lt;<span class="sy0">/</span><span class="kw2">a</span>&gt;</span>
+                <span class="sc2">&lt;<span class="kw2">a</span> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"https://webster.cs.washington.edu/jslint/?referer"</span>&gt;</span>
+                    <span class="sc2">&lt;<span class="kw2">img</span> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">"https://webster.cs.washington.edu/w3c-js.png"</span> <span class="kw3">alt</span><span class="sy0">=</span><span class="st0">"Valid JS"</span> <span class="sy0">/</span>&gt;&lt;<span class="sy0">/</span><span class="kw2">a</span>&gt;</span>
+            <span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">div</span>&gt;</span>
+        <span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">div</span>&gt;</span>
+    <span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">body</span>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">html</span>&gt;</span></pre></pre>
+		</div>
+
+		
+		<div class="codefile">
+			<h2>
+				cow.css &nbsp; &nbsp; 
+				<span class="aside">(507 bytes)</span>
+			</h2>
+			
+			<pre><pre class="css"><span class="coMULTI">/*Augustus Yuan 1027965
+CSE 190MX Tanner
+HW9 Remember the Cow: This page serves as the styling CSS.*/</span>
+&nbsp;
+body <span class="br0">{</span>
+    <span class="kw1">margin</span> <span class="sy0">:</span> <span class="re3">0px</span><span class="sy0">;</span>
+    <span class="kw1">padding</span><span class="sy0">:</span> <span class="re3">0px</span><span class="sy0">;</span>
+    <span class="kw1">font-family</span><span class="sy0">:</span> Arial<span class="sy0">,</span> Helvetica<span class="sy0">,</span> Sans-<span class="kw2">serif</span><span class="sy0">;</span>
+    <span class="kw1">font-size</span><span class="sy0">:</span> <span class="re3">14pt</span><span class="sy0">;</span>
+    <span class="kw1">background-color</span><span class="sy0">:</span> <span class="kw2">white</span><span class="sy0">;</span>
+    <span class="kw1">color</span> <span class="sy0">:</span> <span class="re0">#005AB4</span><span class="sy0">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="re1">.headfoot</span> <span class="br0">{</span>
+    <span class="kw1">background-color</span><span class="sy0">:</span> <span class="re0">#005AB4</span><span class="sy0">;</span>  
+    <span class="kw1">color</span><span class="sy0">:</span> <span class="kw2">white</span><span class="sy0">;</span>
+    <span class="kw1">padding</span><span class="sy0">:</span> <span class="re3">0.5em</span><span class="sy0">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="re1">.headfoot</span> h1 <span class="br0">{</span>
+    <span class="kw1">margin</span> <span class="sy0">:</span> <span class="re3">0px</span><span class="sy0">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="re1">.headfoot</span> h1 img <span class="br0">{</span>
+    <span class="kw1">float</span> <span class="sy0">:</span> <span class="kw1">left</span><span class="sy0">;</span>
+    <span class="kw1">margin-right</span><span class="sy0">:</span> <span class="re3">1em</span><span class="sy0">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="re0">#main</span> <span class="br0">{</span>
+    <span class="kw1">padding</span><span class="sy0">:</span> <span class="re3">2em</span><span class="sy0">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="re0">#error</span> <span class="br0">{</span>
+    <span class="kw1">color</span><span class="sy0">:</span> <span class="kw2">red</span><span class="sy0">;</span>
+<span class="br0">}</span></pre></pre>
+		</div>
+
+		
+		<div class="codefile">
+			<h2>
+				index.php &nbsp; &nbsp; 
+				<span class="aside">(1447 bytes)</span>
+			</h2>
+			
+			<pre><pre class="php"><span class="kw2">&lt;?php</span>
+    <span class="coMULTI">/*Augustus Yuan 1027965
+    CSE 190MX Tanner
+    HW9 Remember the Cow: This page serves as the first page. After the user enters the information,
+    the site will verify if the information is correct. If it is, the site will be redirected to the 
+    to-do list. If the login isn't right, the user will be redirected back to this page with an error
+    message.*/</span>
+    <span class="kw3">session_start</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span><span class="kw3">isset</span><span class="br0">(</span><span class="re0">$_SESSION</span><span class="br0">[</span><span class="st0">"login"</span><span class="br0">]</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw3">header</span><span class="br0">(</span><span class="st0">"Location: todolist.php"</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+    <span class="re0">$login</span> <span class="sy0">=</span> <span class="st0">""</span><span class="sy0">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span><span class="kw3">isset</span><span class="br0">(</span><span class="re0">$_GET</span><span class="br0">[</span><span class="st0">"login"</span><span class="br0">]</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="re0">$login</span> <span class="sy0">=</span> <span class="re0">$_GET</span><span class="br0">[</span><span class="st0">"login"</span><span class="br0">]</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+    <span class="kw1">include</span><span class="br0">(</span><span class="st_h">'top.html'</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="sy1">?&gt;</span>
+    &lt;div id="main"&gt;
+        &lt;p&gt;
+            The best way to manage your tasks. &lt;br /&gt;
+            Never forget the cow (or anything else) again!
+        &lt;/p&gt;
+&nbsp;
+        &lt;p&gt;
+            Log in now to manage your to-do list:
+        &lt;/p&gt;
+&nbsp;
+        &lt;form id="loginform" action="login.php" method="post"&gt;
+            &lt;div&gt;&lt;input id="name" name="name" type="text" size="12" autofocus="autofocus" /&gt; &lt;strong&gt;User Name&lt;/strong&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;input id="password" name="password" type="password" size="12" /&gt; &lt;strong&gt;Password&lt;/strong&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;input id="submitbutton" type="submit" value="Log in" /&gt;&lt;/div&gt;
+        &lt;/form&gt;
+        <span class="kw2">&lt;?php</span> <span class="kw1">if</span> <span class="br0">(</span><span class="re0">$login</span> <span class="sy0">==</span> <span class="st0">"fail"</span><span class="br0">)</span> <span class="br0">{</span> <span class="sy1">?&gt;</span>
+            &lt;p id="error"&gt;
+                Incorrect user name / password.  Please try again.
+            &lt;/p&gt;
+        <span class="kw2">&lt;?php</span> <span class="br0">}</span> <span class="sy1">?&gt;</span>
+    &lt;/div&gt;
+<span class="kw2">&lt;?php</span> <span class="kw1">include</span><span class="br0">(</span><span class="st_h">'bottom.html'</span><span class="br0">)</span><span class="sy0">;</span><span class="sy1">?&gt;</span>
+&nbsp;</pre></pre>
+		</div>
+
+		
+		<div class="codefile">
+			<h2>
+				login.php &nbsp; &nbsp; 
+				<span class="aside">(690 bytes)</span>
+			</h2>
+			
+			<pre><pre class="php"><span class="kw2">&lt;?php</span>
+    <span class="coMULTI">/*Augustus Yuan 1027965
+    CSE 190MX Tanner
+    HW9 Remember the Cow: This page serves to check if the user has put in the appropriate login
+    information. If the user does not, it will redirect them to the index.php page. If the login
+    is correct, the page will redirect the user to the todolist. It will also remember that the user
+    is logged in.*/</span>
+    <span class="kw3">session_start</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">include</span><span class="br0">(</span><span class="st0">"shared.php"</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="re0">$user</span> <span class="sy0">=</span> check_param<span class="br0">(</span><span class="st0">"name"</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="re0">$pass</span> <span class="sy0">=</span> check_param<span class="br0">(</span><span class="st0">"password"</span><span class="br0">)</span><span class="sy0">;</span>    
+    <span class="kw1">if</span> <span class="br0">(</span><span class="re0">$user</span> <span class="sy0">==</span> <span class="st0">"augbog"</span> <span class="sy0">&amp;&amp;</span> <span class="re0">$pass</span> <span class="sy0">==</span> <span class="st0">"12345"</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="re0">$_SESSION</span><span class="br0">[</span><span class="st0">"login"</span><span class="br0">]</span> <span class="sy0">=</span> <span class="re0">$user</span><span class="sy0">;</span>
+        <span class="kw3">header</span><span class="br0">(</span><span class="st0">"Location: todolist.php"</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span> <span class="kw1">else</span> <span class="br0">{</span>
+        <span class="kw3">header</span><span class="br0">(</span><span class="st0">"Location: index.php?login=fail"</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+<span class="sy1">?&gt;</span></pre></pre>
+		</div>
+
+		
+		<div class="codefile">
+			<h2>
+				logout.php &nbsp; &nbsp; 
+				<span class="aside">(478 bytes)</span>
+			</h2>
+			
+			<pre><pre class="php"><span class="kw2">&lt;?php</span>
+    <span class="coMULTI">/*Augustus Yuan 1027965
+    CSE 190MX Tanner
+    HW9 Remember the Cow: This page serves to log the user out. This means, once the user has
+    logged out, all data of the user's session will be erased and they will not be able to access
+    the to-do list unless the provide the appropriate information. It will also redirect them
+    to the homepage.*/</span>
+    <span class="kw3">session_start</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw3">session_destroy</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw3">session_regenerate_id</span><span class="br0">(</span><span class="kw4">TRUE</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw3">header</span><span class="br0">(</span><span class="st0">"Location: index.php"</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="sy1">?&gt;</span></pre></pre>
+		</div>
+
+		
+		<div class="codefile">
+			<h2>
+				todolist.php &nbsp; &nbsp; 
+				<span class="aside">(1014 bytes)</span>
+			</h2>
+			
+			<pre><pre class="php"><span class="kw2">&lt;?php</span>
+    <span class="coMULTI">/*Augustus Yuan 1027965
+    CSE 190MX Tanner
+    HW9 Remember the Cow: This page serves to check if the user has put in the appropriate login
+    information. If the user does not, it will redirect them to the index.php page. If the login
+    is correct, the page will redirect the user to the todolist. It will also remember that the user
+    is logged in.*/</span>
+    <span class="kw3">session_start</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span><span class="sy0">!</span><span class="kw3">isset</span><span class="br0">(</span><span class="re0">$_SESSION</span><span class="br0">[</span><span class="st0">"login"</span><span class="br0">]</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw3">header</span><span class="br0">(</span><span class="st0">"Location: index.php"</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+    <span class="kw1">include</span><span class="br0">(</span><span class="st_h">'top.html'</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="sy1">?&gt;</span>
+        &lt;div id="main"&gt;
+            &lt;h2&gt;<span class="sy1">&lt;?=</span><span class="re0">$_SESSION</span><span class="br0">[</span><span class="st0">"login"</span><span class="br0">]</span><span class="sy1">?&gt;</span>'s To-Do List&lt;/h2&gt;
+&nbsp;
+            &lt;ul id="todolist"&gt;&lt;/ul&gt;
+&nbsp;
+            &lt;div id="buttons"&gt;
+                &lt;input id="itemtext" type="text" size="30" autofocus="autofocus" /&gt;
+                &lt;button id="add"&gt;Add to Bottom&lt;/button&gt;
+                &lt;button id="delete"&gt;Delete Top Item&lt;/button&gt;
+            &lt;/div&gt;
+&nbsp;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="logout.php"&gt;Log Out&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+<span class="kw2">&lt;?php</span> <span class="kw1">include</span><span class="br0">(</span><span class="st_h">'bottom.html'</span><span class="br0">)</span><span class="sy0">;</span><span class="sy1">?&gt;</span>
+&nbsp;</pre></pre>
+		</div>
+
+		
+		<div class="codefile">
+			<h2>
+				todolist.js &nbsp; &nbsp; 
+				<span class="aside">(2800 bytes)</span>
+			</h2>
+			
+			<pre><pre class="ecmascript"><span class="co1">//Augustus Yuan 1027965</span>
+<span class="co1">//CSE 190MX Tanner</span>
+<span class="co1">//HW9 Remember the Cow: In this assignment we are required to interact with a webservice using</span>
+<span class="co1">//ajax and create a to-do's list. The to-do list should use scriptaculous to create some effects.</span>
+<span class="co1">//Furthermore the list should also be able to move around and the code should update itself accordingly.</span>
+<span class="st0">"use strict"</span><span class="sy0">;</span>
+document<span class="sy0">.</span><span class="me1">observe</span><span class="br0">(</span><span class="st0">"dom:loaded"</span><span class="sy0">,</span> <span class="kw2">function</span><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="co1">//get old list if there is one, else don't do anything</span>
+    <span class="kw2">new</span> Ajax<span class="sy0">.</span><span class="me1">Request</span><span class="br0">(</span><span class="st0">"webservice.php"</span><span class="sy0">,</span>  <span class="br0">{</span>
+        method<span class="sy0">:</span> <span class="st0">"get"</span><span class="sy0">,</span>
+        onSuccess<span class="sy0">:</span> updateList 
+    <span class="br0">}</span><span class="br0">)</span><span class="sy0">;</span>
+    $<span class="br0">(</span><span class="st0">"add"</span><span class="br0">)</span><span class="sy0">.</span><span class="me1">observe</span><span class="br0">(</span><span class="st0">"click"</span><span class="sy0">,</span> add<span class="br0">)</span><span class="sy0">;</span>
+    $<span class="br0">(</span><span class="st0">"delete"</span><span class="br0">)</span><span class="sy0">.</span><span class="me1">observe</span><span class="br0">(</span><span class="st0">"click"</span><span class="sy0">,</span> remove<span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span><span class="br0">)</span><span class="sy0">;</span>
+&nbsp;
+<span class="co1">//function that takes in an event and adds the next item to the to-do list inputted by the user</span>
+<span class="co1">//all list items should be sortable and should be updated into the user's list</span>
+<span class="kw2">function</span> add<span class="br0">(</span>event<span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw2">var</span> item <span class="sy0">=</span>  $<span class="br0">(</span><span class="st0">"itemtext"</span><span class="br0">)</span><span class="sy0">.</span><span class="me1">value</span><span class="sy0">;</span>
+    <span class="kw2">var</span> li <span class="sy0">=</span> document<span class="sy0">.</span><span class="me1">createElement</span><span class="br0">(</span><span class="st0">"li"</span><span class="br0">)</span><span class="sy0">;</span>
+    li<span class="sy0">.</span><span class="me1">innerHTML</span> <span class="sy0">=</span> item<span class="sy0">;</span>
+    li<span class="sy0">.</span><span class="me1">hide</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+    $<span class="br0">(</span><span class="st0">"todolist"</span><span class="br0">)</span><span class="sy0">.</span><span class="me1">appendChild</span><span class="br0">(</span>li<span class="br0">)</span><span class="sy0">;</span>
+    li<span class="sy0">.</span><span class="me1">appear</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+    Sortable<span class="sy0">.</span><span class="me1">create</span><span class="br0">(</span><span class="st0">"todolist"</span><span class="sy0">,</span> <span class="br0">{</span>
+        onChange<span class="sy0">:</span> listChange
+    <span class="br0">}</span><span class="br0">)</span><span class="sy0">;</span>
+    updateSession<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="co1">//function that takes in an event and removes the next item to the to-do list inputted by the user</span>
+<span class="co1">//all list items should be sortable and should be updated into the user's list</span>
+<span class="kw2">function</span> remove<span class="br0">(</span>event<span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw2">if</span> <span class="br0">(</span>$$<span class="br0">(</span><span class="st0">"#todolist li"</span><span class="br0">)</span><span class="sy0">.</span><span class="me1">length</span> <span class="sy0">&gt;</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw2">new</span> Effect<span class="sy0">.</span><span class="me1">Fade</span><span class="br0">(</span>$<span class="br0">(</span><span class="st0">"todolist"</span><span class="br0">)</span><span class="sy0">.</span><span class="me1">firstChild</span><span class="sy0">,</span> <span class="br0">{</span>
+            afterFinish<span class="sy0">:</span> <span class="kw2">function</span><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+                $<span class="br0">(</span><span class="st0">"todolist"</span><span class="br0">)</span><span class="sy0">.</span><span class="me1">firstChild</span><span class="sy0">.</span><span class="me1">remove</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+                updateSession<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+            <span class="br0">}</span>
+        <span class="br0">}</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="co1">//function that takes in a list and highlights. Called when user moves an item. This will</span>
+<span class="co1">//also make sure the saved list is updated</span>
+<span class="kw2">function</span> listChange<span class="br0">(</span>list<span class="br0">)</span> <span class="br0">{</span>
+    list<span class="sy0">.</span><span class="me1">highlight</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+    updateSession<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="co1">//function that helps updates the user's list so that when she leaves and returns, it will be saved.</span>
+<span class="co1">//code is in JSON format</span>
+<span class="kw2">function</span> updateSession<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw2">var</span> arr <span class="sy0">=</span> $$<span class="br0">(</span><span class="st0">"#todolist li"</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw2">var</span> list <span class="sy0">=</span> <span class="br0">{</span><span class="br0">}</span><span class="sy0">;</span>
+    list<span class="sy0">.</span><span class="me1">items</span> <span class="sy0">=</span> <span class="br0">[</span><span class="br0">]</span><span class="sy0">;</span>
+    <span class="kw2">for</span> <span class="br0">(</span><span class="kw2">var</span> i <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> arr<span class="sy0">.</span><span class="me1">length</span><span class="sy0">;</span> i<span class="sy0">++</span><span class="br0">)</span> <span class="br0">{</span>
+        arr<span class="br0">[</span>i<span class="br0">]</span><span class="sy0">.</span><span class="me1">id</span> <span class="sy0">=</span> <span class="st0">"list_"</span> <span class="sy0">+</span> i<span class="sy0">;</span>
+        list<span class="sy0">.</span><span class="me1">items</span><span class="sy0">.</span><span class="me1">push</span><span class="br0">(</span>arr<span class="br0">[</span>i<span class="br0">]</span><span class="sy0">.</span><span class="me1">innerHTML</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+    list <span class="sy0">=</span> JSON<span class="sy0">.</span><span class="me1">stringify</span><span class="br0">(</span>list<span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw2">new</span> Ajax<span class="sy0">.</span><span class="me1">Request</span><span class="br0">(</span><span class="st0">"webservice.php"</span><span class="sy0">,</span>  <span class="br0">{</span>
+        method<span class="sy0">:</span> <span class="st0">"post"</span><span class="sy0">,</span>
+        parameters<span class="sy0">:</span> <span class="br0">{</span><span class="st0">"todolist"</span> <span class="sy0">:</span> list<span class="br0">}</span>
+    <span class="br0">}</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="co1">//function that takes in ajax and updates the current to-do list assuming there is a to-do list</span>
+<span class="co1">//made by the user.</span>
+<span class="kw2">function</span> updateList<span class="br0">(</span>ajax<span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw2">var</span> list <span class="sy0">=</span> JSON<span class="sy0">.</span><span class="me1">parse</span><span class="br0">(</span>ajax<span class="sy0">.</span><span class="me1">responseText</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw2">var</span> array <span class="sy0">=</span> list<span class="sy0">.</span><span class="me1">items</span><span class="sy0">;</span>
+    <span class="kw2">for</span> <span class="br0">(</span><span class="kw2">var</span> i <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> array<span class="sy0">.</span><span class="me1">length</span><span class="sy0">;</span> i<span class="sy0">++</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw2">var</span> li <span class="sy0">=</span> document<span class="sy0">.</span><span class="me1">createElement</span><span class="br0">(</span><span class="st0">"li"</span><span class="br0">)</span><span class="sy0">;</span>
+        li<span class="sy0">.</span><span class="me1">innerHTML</span> <span class="sy0">=</span> array<span class="br0">[</span>i<span class="br0">]</span><span class="sy0">;</span>
+        li<span class="sy0">.</span><span class="me1">id</span> <span class="sy0">=</span> <span class="st0">"list_"</span> <span class="sy0">+</span> i<span class="sy0">;</span>
+        $<span class="br0">(</span><span class="st0">"todolist"</span><span class="br0">)</span><span class="sy0">.</span><span class="me1">appendChild</span><span class="br0">(</span>li<span class="br0">)</span><span class="sy0">;</span>
+        li<span class="sy0">.</span><span class="me1">hide</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+        li<span class="sy0">.</span><span class="me1">appear</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+    Sortable<span class="sy0">.</span><span class="me1">create</span><span class="br0">(</span><span class="st0">"todolist"</span><span class="sy0">,</span> <span class="br0">{</span>
+        onChange<span class="sy0">:</span> listChange
+    <span class="br0">}</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span></pre></pre>
+		</div>
+
+		
+		<div class="codefile">
+			<h2>
+				webservice.php &nbsp; &nbsp; 
+				<span class="aside">(854 bytes)</span>
+			</h2>
+			
+			<pre><pre class="php"><span class="kw2">&lt;?php</span>
+<span class="coMULTI">/*Augustus Yuan 1027965
+CSE 190MX Tanner
+HW9 Remember the Cow: This page serves to check if the user has put in the appropriate login
+information. If the user does not, it will redirect them to the index.php page. If the login
+is correct, the page will redirect the user to the todolist. It will also remember that the user
+is logged in.*/</span>
+<span class="kw3">session_start</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="kw1">include</span><span class="br0">(</span><span class="st0">"shared.php"</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="co1">//when to-do list starts and there is a list to provide</span>
+<span class="kw1">if</span> <span class="br0">(</span><span class="re0">$_SERVER</span><span class="br0">[</span><span class="st0">"REQUEST_METHOD"</span><span class="br0">]</span> <span class="sy0">==</span> <span class="st0">"GET"</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">if</span> <span class="br0">(</span><span class="kw3">file_exists</span><span class="br0">(</span><span class="st0">"list.json"</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw3">header</span><span class="br0">(</span><span class="st_h">'Content-type: application/json'</span><span class="br0">)</span><span class="sy0">;</span>
+        <span class="kw1">print</span><span class="br0">(</span><span class="kw3">file_get_contents</span><span class="br0">(</span><span class="st0">"list.json"</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+<span class="co1">//else if the to-do list is being changed and we need to update it</span>
+<span class="br0">}</span> <span class="kw1">elseif</span> <span class="br0">(</span><span class="re0">$_SERVER</span><span class="br0">[</span><span class="st0">"REQUEST_METHOD"</span><span class="br0">]</span> <span class="sy0">==</span> <span class="st0">"POST"</span><span class="br0">)</span> <span class="br0">{</span>
+  <span class="co2"># process a POST request
+</span>    <span class="re0">$data</span> <span class="sy0">=</span> check_param<span class="br0">(</span><span class="st0">"todolist"</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw3">file_put_contents</span><span class="br0">(</span><span class="st0">"list.json"</span><span class="sy0">,</span> <span class="re0">$data</span><span class="br0">)</span><span class="sy0">;</span>  
+<span class="br0">}</span>
+<span class="sy1">?&gt;</span></pre></pre>
+		</div>
+
+		
+		<div class="codefile">
+			<h2>
+				shared.php &nbsp; &nbsp; 
+				<span class="aside">(395 bytes)</span>
+			</h2>
+			
+			<pre><pre class="php"><span class="kw2">&lt;?php</span>
+<span class="co1">//function that takes in a paramater and makes sure it is set and/or not blank</span>
+<span class="co1">//if it is, the function will throw a 400 Invalid Request Error</span>
+<span class="kw2">function</span> check_param<span class="br0">(</span><span class="re0">$var</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">if</span> <span class="br0">(</span><span class="sy0">!</span><span class="kw3">isset</span><span class="br0">(</span><span class="re0">$_POST</span><span class="br0">[</span><span class="re0">$var</span><span class="br0">]</span><span class="br0">)</span> <span class="sy0">||</span> <span class="re0">$_POST</span><span class="br0">[</span><span class="re0">$var</span><span class="br0">]</span> <span class="sy0">==</span> <span class="st0">""</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw3">header</span><span class="br0">(</span><span class="st0">"HTTP/1.1 400 Invalid Request"</span><span class="br0">)</span><span class="sy0">;</span>
+        <span class="kw3">die</span><span class="br0">(</span><span class="st0">"HTTP/1.1 400 Invalid Request: missing required parameter '<span class="es4">$var</span>'"</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+    <span class="kw1">return</span> <span class="re0">$_POST</span><span class="br0">[</span><span class="re0">$var</span><span class="br0">]</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<span class="sy1">?&gt;</span></pre></pre>
+		</div>
+
+		
+</div>
+
+
+	<div id="loading">One moment...</div>
+	<pre id="dumptarget"></pre>
+	
+	
+	
+
+	</body></html>

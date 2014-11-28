@@ -1,0 +1,152 @@
+html{
+	position: relative;
+	height: 90%;
+}
+
+body {
+	position: relative;
+	height: 100%;
+}
+
+#logo {
+	position: relative;
+	width: 30%;
+	height: 35%;
+ }
+
+ .userinfo{
+	position:absolute;
+	top: 0;
+	right: 0;
+	margin: 15px 30px 15px 30px;
+ }
+ 
+ .user{
+	color: blue;
+	font-weight: bold;
+	display: inline;
+ }
+ 
+ .reputation{
+	color: red;
+	display: inline;
+ }
+ 
+ .signout{
+	text-align: right;
+ }
+ 
+.fortune-list{
+	list-style-type: none;
+}
+
+.option {
+	position: relative;
+	width: 60%;
+	text-align: center;
+	margin: 10px;
+	margin-top: 0px;
+}
+
+.option label {
+	display: inline;
+	margin-right: 30px;
+}
+
+.navbar {
+	position: relative;
+    margin-bottom: 10px;
+	overflow: auto;
+}
+
+.navbar-inner {
+	padding: 0px;
+}
+
+.nav {
+	width: 100%; 
+	position: relative;
+}
+
+.nav li{
+	width: 50%;
+	text-align: center;
+}
+
+.container-fluid{
+	position: relative;
+	height: 100%;
+}
+
+.row-fluid {
+	width: auto;
+	height: 100%
+}
+
+.row-fluid .span25{
+	height: 25%;
+}
+
+.row-fluid .span75{
+	height: 75%;
+	margin: 0;
+}
+
+.row-fluid .span75 [class*="span"]{
+	border-style: solid;
+	border-width: 2px;
+	height: 100%;
+}
+
+.row-fluid .span60 {
+	margin: 0px;
+	width: 60%;
+	overflow-y: auto;
+}
+
+.fortune-list{
+	margin: 10px 20px 10px 20px;
+}
+
+.row-fluid .span40 {
+	margin: 0px;
+	width: 40%;
+	padding: 50px;
+}
+
+.span40 #fortune{
+	text-align: center;
+}
+
+.span40 .info {
+	margin: 15px;
+	width: 100%;
+	display: inline-block;
+}	
+
+
+.span40 .active-info, .span40 .applied-info {
+	width: 50%;
+}
+
+.span40 .applied-info {
+	float: left;
+}
+
+.span40 .active-info{
+	float: right;
+}
+
+.applied {
+	color: green;
+}
+
+.signout {
+	margin-left: 100px;,
+	clear: both;
+}
+
+.navbar {
+	margin-top: 40px;
+	clear: both;
+}

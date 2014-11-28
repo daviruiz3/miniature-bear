@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<!--
+	INFO 461, Winter 2013
+	Devellectual
+	Provided HTML file for psychic control panel
+	-->
+	<head>
+		<title>Psychic Control Panel</title>
+		<link rel="stylesheet" href="assets/css/bootstrap.css"></link>
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css"></link>
+		<link rel="stylesheet" href="assets/css/bootstrap-responsive.css"></link>
+		<link rel="stylesheet" href="assets/css/bootstrap-responsive.min.css"></link>
+		<!--
+			This is the CSS file for control panel.
+		-->
+		<link rel="stylesheet" href="controlpanel.css"></link>
+		
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span25">
+					<h1>
+						<img id="logo" src="logo.gif" alt="Clairvoyance"/>
+					</h1>
+					<div class="userinfo">
+						<div class="user">
+							<a class="btn" href="#"><i class="icon-user"></i></a>
+							Hello, mamafong
+						</div>
+						<div class="reputation">
+							(81)
+						</div>
+						<div class="signout">
+							<a href="logout.php"><button class="btn btn-mini btn-primary" type="button">Sign Out</button></a>
+						</div>
+					</div>
+					<div class="navbar">
+						<div class="navbar-inner">
+							<ul class="nav">
+								<li>
+									<a href="#">Dashboard</a>
+								</li>
+								<li class="active">
+									<a href="#">Control Panel</a>
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+				<div class="span75">
+					<div class="container-fluid">
+						<div class="row-fluid">
+							<div class="span20">
+								<div class="user-info">
+									<h3>
+										<a class="btn" href="#"><i class="icon-user"></i></a>
+										mamafong
+									</h3>
+									<h5> Status: </h5>
+										<form action="">
+											<select name="status">
+											<option value="active" selected>Active</option>
+											<option value="inactive">Inactive</option>
+											</select>
+										</form>
+									<h5> Change Password: </h5>
+										<form>
+											Current Password: <input type="password" name="pwd">
+											New Password: <input type="password" name="pwd">
+											Confirm New Password: <input type="password" name="pwd">
+										</form> 
+									<button class="btn btn-primary" type="button">Save</button>
+								</div>
+							</div>
+							
+							<div class="span30">
+								<h3 class="create"> Create A Fortune </h3>
+								<textarea rows="6" cols="5000" maxlength="140" placeholder="Enter a fortune.">
+								</textarea>
+								<div class="option">
+									<label>
+										<input type="radio" name="viewOption" value="active" checked> Active     
+									</label>
+									<label>
+										<input type="radio" name="viewOption" value="inactive"> Inactive
+									</label>
+								</div>
+							</div>
+							
+							<div class="span45">
+							</div>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

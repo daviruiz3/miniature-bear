@@ -1,0 +1,15 @@
+#twitterSubscribe {
+	clear: both;
+	text-align: center;
+}
+
+#signin_sidebar {
+	margin-top: 10px;
+	float:right;
+	width: 45%;
+	height: auto;
+}
+
+#tweet_subhead {
+	font-size: 15pt;
+}

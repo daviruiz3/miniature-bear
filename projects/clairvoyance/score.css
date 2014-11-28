@@ -1,0 +1,46 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: url(game.png) no-repeat center center fixed;
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+}
+
+h1 {
+	margin: 30px;
+	text-align: center;
+}
+
+.board {
+	background-color:#ffffff;
+	opacity:0.6;
+	text-align: center;
+	padding: 30px;
+	color:black;
+
+}
+
+.centered{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	list-style-position: inside;
+	font-size: 24px;
+	overflow: auto;
+}
+
+.centered li{
+	margin: 15px;
+}
+
+.option{
+	text-align: center;
+}
+
+.option .btn{
+	margin: 30px;
+}

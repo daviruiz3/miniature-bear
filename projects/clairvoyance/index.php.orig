@@ -1,0 +1,104 @@
+<<<<<<< HEAD
+<?php 
+/*set script variable to include css or javascript files in header
+	e.g.
+	scripts = array(array("type" => "css", "link" => "assets/css/index.css"));
+*/
+$scripts = array(array("type" => "css", "link" => "assets/css/index.css"));
+require_once("top.php");
+
+?>
+=======
+<?php require_once("top.html"); ?>
+	<link rel="stylesheet" href="assets/css/index.css">
+>>>>>>> aa4b7c1d184f84144f6b47170ab8beb327cd75c9
+    <div class="container">
+	<h1>Clairvoyance</h1>
+	  <div id="signin_sidebar">
+		  <form class="form-signin" id="psychicLogin">
+			<h2 class="form-signin-heading">Psychic Login</h2>
+			<input type="text" class="input-block-level" placeholder="Username">
+<<<<<<< HEAD
+			<div>
+				 New to Clairvoyance? <a href="psychicRegister.php">Sign up</a>
+			</div>
+=======
+>>>>>>> aa4b7c1d184f84144f6b47170ab8beb327cd75c9
+			<input type="password" class="input-block-level" placeholder="Password">
+			<label class="checkbox">
+			  <input type="checkbox" value="remember-me"> Remember me
+			</label>
+			<button class="btn btn-large btn-primary" type="submit">Sign in</button>
+		  </form>
+		  <form id="twitterSubscribe" class="form-signin" action="redirect.php">
+<<<<<<< HEAD
+			<h2 id="tweet_subhead">
+				<?php 
+					session_start();
+					if($_SESSION['status']=='verified'){
+						echo $_SESSION['access_token']['screen_name'] . ' Registered!';
+					}else{
+						echo "Want to receive fortunes?";
+					}
+				?>
+			</h2>
+			<button class="btn btn-large btn-primary" >Subscribe</button>
+			
+			<p>
+				<a href="logout.php">Logout</a>
+			</p>
+=======
+			<h2 id="tweet_subhead">Want to receive fortunes?</h2>
+			<button class="btn btn-large btn-primary" >Subscribe</button>
+>>>>>>> aa4b7c1d184f84144f6b47170ab8beb327cd75c9
+		  </form>
+	  </div>
+	</div> <!-- /container -->
+	
+	<!--debugging code-->
+	<?php
+<<<<<<< HEAD
+		echo date(DATE_RSS);
+		echo " time</br>";
+		#session_start();
+=======
+		session_start();
+>>>>>>> aa4b7c1d184f84144f6b47170ab8beb327cd75c9
+		Print_r($_SESSION);
+		echo "session </br>";
+		Print_r($_REQUEST);
+		echo "request </br>";
+		Print_r($_COOKIE);
+		echo "cookie </br>";
+		Print_r($_POST);
+		echo "post </br>";
+		Print_r($_GET);
+		echo "get </br>";
+<<<<<<< HEAD
+		
+		function randString($length, $charset='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789')
+		{
+			$str = '';
+			$count = strlen($charset);
+			while ($length--) {
+				$str .= $charset[mt_rand(0, $count-1)];
+			}
+			return $str;
+		}
+		
+		$iv = hash('sha256', 'taco');
+		#var_dump($iv);
+		echo $iv . "<br/>";
+		echo phpinfo();
+=======
+		#echo "tacos";
+>>>>>>> aa4b7c1d184f84144f6b47170ab8beb327cd75c9
+	?>
+	
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+/*Augustus Yuan 1027965
+CSE 190MX Tanner
+HW9 Remember the Cow: This page serves as the styling CSS.*/
+
+body {
+	margin : 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 14pt;
+	background-color: white;
+	color : #005AB4;
+}
+
+.headfoot {
+	background-color: #005AB4;	
+	color: white;
+	padding: 0.5em;
+}
+
+.headfoot h1 {
+	margin : 0px;
+}
+
+.headfoot h1 img {
+	float : left;
+	margin-right: 1em;
+}
+
+#main {
+	padding: 2em;
+}
+
+#error {
+	color: red;
+}
