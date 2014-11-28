@@ -57,3 +57,8 @@ body a {
 body a:hover, body a:focus{
 	color: #98EE50;
 }
+
+.event1 .row{
+	background-color: #EF5080;
+	color: #98EE50;
+}
