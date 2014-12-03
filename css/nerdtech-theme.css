@@ -21,6 +21,7 @@
 }
 
 body{
+	@grid-gutter-width:  30px;
 	font-family: 'Lato', 'Open Sans', sans-serif;
 	background-color: #5DCD00;
 	color: #CD003E;
