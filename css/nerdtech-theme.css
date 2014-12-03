@@ -62,3 +62,7 @@ body .event1 a:hover, body .event1 a:focus{
 img {
 	margin-bottom: 10px;
 }
+
+.event1 #batcall {
+	margin-left: 25%;
+}
