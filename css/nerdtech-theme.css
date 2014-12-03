@@ -21,7 +21,6 @@
 }
 
 body{
-	@grid-gutter-width:  150px;
 	font-family: 'Lato', 'Open Sans', sans-serif;
 	background-color: #5DCD00;
 	color: #CD003E;
@@ -45,6 +44,7 @@ body{
 .event1 img{
 	max-width: 50%;
 	max-height: 50%;
+	margin-bottom: 10px;
 }
 
 .activities img{
