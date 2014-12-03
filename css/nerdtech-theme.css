@@ -51,11 +51,11 @@ body{
 	max-height: 280px;
 }
 
-body a {
+body .event1 a {
 	color: #FFF056;
 }
 
-body a:hover, body a:focus{
+body .event1 a:hover, body .event1 a:focus{
 	color: #98EE50;
 }
 
