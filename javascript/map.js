@@ -1,7 +1,7 @@
 function pageLoad() {
   url = GMaps.staticMapURL({
     size: [610, 300],
-    zoom: 4,
+    zoom: 2,
     lat: 46.235000, 
     lng: -119.223301,
     markers: [
