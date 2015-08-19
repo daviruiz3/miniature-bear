@@ -24,6 +24,26 @@
 
   <body role="document">
     <!-- Color Choices: http://paletton.com/#uid=72A1T0kwWsPldHvr0-xz2lBGJdL -->
+    <script>
+    //alert("hello");
+
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '530080707140934',
+        xfbml      : true,
+        version    : 'v2.4'
+      });
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+
+    </script>
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -53,14 +73,16 @@
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron main-msg">
-        <h3><strong>Hi I'm David Ruiz!</strong></h3>
-        <p>I love technology! New projects, that's my thing I love solving new problems. I've worn many hats I can be a project manager, developer, designer, data scientist, and a database administrator. I love pretty much anything technical but my passion right now is in information assurance and cybersecurity.</p>
-        <p>I spend my free time going to the movies, playing video games, hanging out with my family, and I recently picked up tennis. I also like researching new topics and enrolling in MOOCs that interest me.</p>
-        <p> I'm always open to a new project so if you have an idea and want some help with the technical side contact me.</p>
+        <h3>Skilled Background</h3>
+        <p>I'm a web developer. I have a Bachelors of Science in Informatics from the University of Washington. I'm currently working on my 2nd Bachelors degree in Cyber Security from the Columbia Basin College. Most of my coursework has involved web development, &amp; software development. I've also worked to a lesser extent with subjects in applied mathematics, data science, and database technology.</p>
+        <h3>Current Interest</h3>
+        <p></p>
+        <h3>Current Projects or Goals</h3>
+        <p>I'm always open to a new project so if you have an idea and want some help with the technical side contact me.</p>
       </div>
 
       <div class="jumbotron main-msg">
-        <h3><strong>Freelance Work ..</strong></h3>
+        <h3><strong>Skills and Qualifications</strong></h3>
         <div class="row">
           <div class="col-md-8">
             <p>Currently located in the Tri-Cities Call me at (509)551-6365</p>
@@ -68,9 +90,6 @@
           </div>
           <div class="col-md-4">
             <ul>
-              <li>Virus &amp; Malware Removal</li>
-              <li>Speed Up Slow Computer</li>
-              <li>Operating System Repair &amp; Upgrade</li>
               <li>UX Design</li>
               <li>Web Development</li>
               <li>Infographic</li>
@@ -106,7 +125,9 @@
         </div>
       </div>
 
-
+      <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
+      </div>
+      
     </div> <!-- /container -->
 
 
