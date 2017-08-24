@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free Lance - Web developer, Data Science, Applied Mathematics, Datbase Administration, UX Design, Computer Repair">
+    <meta name="author" content="David Ruiz">
+    <link rel="icon" href="http://iconsineed.com/icons/wirecons-free-vector-icons/code-128.png">
+
+    <title>Nerd Tech</title>
+
+    <!-- Bootstrap minified, optional, and theme-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/theme/theme.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/nerdtech-theme.css">
+
+    <!-- Custom Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,500,700,900" rel="stylesheet">
+  </head>
+
+  <body role="document">
+    <!-- Color Choices: http://paletton.com/#uid=72A1T0kwWsPldHvr0-xz2lBGJdL -->
+    <script>
+    //alert("hello");
+
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '530080707140934',
+        xfbml      : true,
+        version    : 'v2.4'
+      });
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar-custom">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand"><strong>David Ruiz</strong></span>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Captain's Log</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron main-msg">
+        <h3>Skilled Background</h3>
+        <p>I'm a web developer. I have a Bachelors of Science in Informatics from the University of Washington. I'm currently working on my 2nd Bachelors degree in Cyber Security from the Columbia Basin College. Most of my coursework has involved web development, &amp; software development. I've also worked to a lesser extent with subjects in applied mathematics, data science, and database technology.</p>
+        <h3>Current Interest</h3>
+        <p></p>
+        <h3>Current Projects or Goals</h3>
+        <p>I'm always open to a new project so if you have an idea and want some help with the technical side contact me.</p>
+      </div>
+
+      <div class="jumbotron main-msg">
+        <h3><strong>Skills and Qualifications</strong></h3>
+        <div class="row">
+          <div class="col-md-8">
+            <p>Currently located in the Tri-Cities Call me at (509)551-6365</p>
+            <div id="map"></div>
+          </div>
+          <div class="col-md-4">
+            <ul>
+              <li>UX Design</li>
+              <li>Web Development</li>
+              <li>Infographic</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="jumbotron main-msg">
+        <h3><strong>Programming Languages, Software Skills, &amp; Qualifications</strong></h3>
+        <ul>
+          <li>Languages: Python, Java, SQL, JavaScript, jQuery, Matlab, PHP, HTML5, CSS3, XQuery (Saxon he), XML, Octave, C#, R</li>
+          <li>Database: Microsoft SQL Server, MySQL, SQLite, SQL Azure</li>
+          <li>APIs: Twitter API, PixelMath2013a.jar, MusicMatch API, Google Youtube JavaScript API, Reddit API, Amazon API, ComicVine API, Yelp API</li>
+          <li>Frameworks: Twitter Bootstrap, .NET, Drupal</li>
+          <li>Libraries: jQuery, PIL, EXIF, Node.js</li>
+          <li>Software: Illustrator, Photoshop, Microsoft Office, Axure, Eclipse, Sublime Text 2, Python IDLE, Visual Studio, Wireshark, Acrobat, NetStumbler, LucidWorks Ent.</li>
+        </ul>
+      </div>
+
+      <div class="jumbotron main-msg activities">
+        <h3><strong>Shopping and Playing Tennis</strong></h3>
+        <div class="row">
+          <div class="col-md-4"><img src="images/tennis1.jpg" alt="David playing tennis" class="img-thumbnail"></div>
+          <div class="col-md-4"><img src="images/tennis2.jpg" alt="Amon Park Tree Carved" class="img-thumbnail"></div>
+          <div class="col-md-4"><img src="images/face1.jpg" alt="David" class="img-thumbnail"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4"><img src="images/shop1.jpg" alt="Shopping at Yokes" class="img-thumbnail"></div>
+          <div class="col-md-4"><img src="images/shop2.jpg" alt="Shopping at Yokes" class="img-thumbnail"></div>
+          <div class="col-md-4"><img src="images/face2.jpg" alt="David" class="img-thumbnail"></div>
+        </div>
+      </div>
+
+      <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!--gmaps.js-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/HPNeo/gmaps/master/gmaps.js"></script>
+    <script type="text/javascript" src="javascript/map.js"></script>
+  </body>
+</html>
